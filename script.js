@@ -2440,6 +2440,12 @@ class NavigationManager {
       this.showSection('contact');
       this.closeMobileMenu();
     });
+    // Contact tab
+    document.getElementById('home-tab').addEventListener('click', (e) => {
+      e.preventDefault();
+      this.showSection('home');
+      this.closeMobileMenu();
+    });
 
     // FAQs tab
     document.getElementById('faqs-tab').addEventListener('click', (e) => {
