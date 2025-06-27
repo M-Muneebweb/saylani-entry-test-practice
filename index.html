@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllani Entry Test Practice</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Syllani Entry Test Practice</h2>
+            </div>
+            
+            <div class="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">MCQs <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#" data-subject="computer">Computer</a>
+                        <a href="#" data-subject="english">English</a>
+                        <a href="#" data-subject="general-knowledge">General Knowledge</a>
+                        <a href="#" data-subject="iq">IQ</a>
+                        <a href="#" data-subject="islamiat">Islamiat</a>
+                        <a href="#" data-subject="math">Math</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link" id="contact-tab">Contact</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link" id="faqs-tab">FAQs</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link" id="about-tab">About Us</a>
+                </div>
+                <div class="nav-item theme-toggle">
+                    <button id="theme-toggle-btn" class="theme-btn">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home-section" class="section active">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1>Welcome to Syllani Entry Test Practice</h1>
+                    <p>Master your entry test preparation with our comprehensive MCQs collection</p>
+                    <div class="subject-cards">
+                        <div class="subject-card" data-subject="computer">
+                            <i class="fas fa-laptop"></i>
+                            <h3>Computer</h3>
+                            <p>50 MCQs</p>
+                        </div>
+                        <div class="subject-card" data-subject="english">
+                            <i class="fas fa-language"></i>
+                            <h3>English</h3>
+                            <p>50 MCQs</p>
+                        </div>
+                        <div class="subject-card" data-subject="general-knowledge">
+                            <i class="fas fa-globe"></i>
+                            <h3>General Knowledge</h3>
+                            <p>50 MCQs</p>
+                        </div>
+                        <div class="subject-card" data-subject="iq">
+                            <i class="fas fa-brain"></i>
+                            <h3>IQ</h3>
+                            <p>50 MCQs</p>
+                        </div>
+                        <div class="subject-card" data-subject="islamiat">
+                            <i class="fas fa-mosque"></i>
+                            <h3>Islamiat</h3>
+                            <p>50 MCQs</p>
+                        </div>
+                        <div class="subject-card" data-subject="math">
+                            <i class="fas fa-calculator"></i>
+                            <h3>Math</h3>
+                            <p>50 MCQs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MCQ Section -->
+        <section id="mcq-section" class="section">
+            <div class="mcq-container">
+                <div class="mcq-header">
+                    <div class="subject-info">
+                        <h2 id="current-subject">Subject Name</h2>
+                        <div class="progress-info">
+                            <span id="question-counter">Question 1 of 50</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progress-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mcq-content">
+                    <div class="question-container">
+                        <h3 id="question-text">Question will appear here</h3>
+                    </div>
+                    
+                    <div class="options-container">
+                        <div class="option" data-option="A">
+                            <input type="radio" name="answer" id="option-A" value="A">
+                            <label for="option-A">
+                                <span class="option-letter">A</span>
+                                <span class="option-text" id="option-A-text">Option A</span>
+                            </label>
+                        </div>
+                        <div class="option" data-option="B">
+                            <input type="radio" name="answer" id="option-B" value="B">
+                            <label for="option-B">
+                                <span class="option-letter">B</span>
+                                <span class="option-text" id="option-B-text">Option B</span>
+                            </label>
+                        </div>
+                        <div class="option" data-option="C">
+                            <input type="radio" name="answer" id="option-C" value="C">
+                            <label for="option-C">
+                                <span class="option-letter">C</span>
+                                <span class="option-text" id="option-C-text">Option C</span>
+                            </label>
+                        </div>
+                        <div class="option" data-option="D">
+                            <input type="radio" name="answer" id="option-D" value="D">
+                            <label for="option-D">
+                                <span class="option-letter">D</span>
+                                <span class="option-text" id="option-D-text">Option D</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mcq-controls">
+                    <button class="btn btn-secondary" id="prev-btn" disabled>
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <button class="btn btn-primary" id="next-btn">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <button class="btn btn-success" id="finish-btn" style="display: none;">
+                        Finish Test <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Review Section -->
+        <section id="review-section" class="section">
+            <div class="review-container">
+                <div class="review-header">
+                    <h2>Test Review</h2>
+                    <div class="score-summary">
+                        <div class="score-card correct">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Correct: <span id="correct-count">0</span></span>
+                        </div>
+                        <div class="score-card incorrect">
+                            <i class="fas fa-times-circle"></i>
+                            <span>Incorrect: <span id="incorrect-count">0</span></span>
+                        </div>
+                        <div class="score-card percentage">
+                            <i class="fas fa-percentage"></i>
+                            <span>Score: <span id="percentage-score">0%</span></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-content" id="review-content">
+                    <!-- Review items will be populated by JavaScript -->
+                </div>
+                
+                <div class="review-controls">
+                    <button class="btn btn-primary" id="retry-btn">
+                        <i class="fas fa-redo"></i> Retry Test
+                    </button>
+                    <button class="btn btn-secondary" id="home-btn">
+                        <i class="fas fa-home"></i> Back to Home
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about-section" class="section">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="about-content">
+                    <p>Syllani Entry Test Practice is a comprehensive online platform designed to help students prepare for various entry tests. Our mission is to provide high-quality practice questions and a user-friendly interface to enhance your learning experience.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-book"></i>
+                            <h3>Comprehensive Content</h3>
+                            <p>300+ carefully crafted MCQs across 6 different subjects</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Progress Tracking</h3>
+                            <p>Monitor your performance and identify areas for improvement</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Mobile Friendly</h3>
+                            <p>Practice anywhere, anytime with our responsive design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact-section" class="section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>muneebrashidhome@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <h3>Phone</h3>
+                            <p>+92 3133258330</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Address</h3>
+                            <p>Hyderabad, Pakistan</p>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section id="faqs-section" class="section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faqs-content">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How many questions are there in each subject?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Each subject contains 50 carefully selected multiple-choice questions to help you practice effectively.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I review my answers after completing the test?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, after completing the test, you can review all your answers with correct solutions and explanations.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is there a time limit for each test?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Currently, there is no time limit. You can take your time to think through each question carefully.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I retake the tests?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, you can retake any test as many times as you want to improve your score and understanding.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Syllani Entry Test Practice</h3>
+                    <p>Your gateway to success in entry tests</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#" id="footer-home">Home</a></li>
+                        <li><a href="#" id="footer-about">About</a></li>
+                        <li><a href="#" id="footer-contact">Contact</a></li>
+                        <li><a href="#" id="footer-faqs">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Subjects</h4>
+                    <ul>
+                        <li><a href="#" data-subject="computer">Computer</a></li>
+                        <li><a href="#" data-subject="english">English</a></li>
+                        <li><a href="#" data-subject="math">Math</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Syllani Entry Test Practice. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
