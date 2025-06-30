@@ -1,5 +1,5 @@
 // ============================================
-// SYLLANI ENTRY TEST PRACTICE - JAVASCRIPT
+// Saylani ENTRY TEST PRACTICE - JAVASCRIPT
 // ============================================
 
 // Global Variables
@@ -2897,7 +2897,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Show home section by default
   navigationManager.showSection('home');
 
-  console.log('Syllani Entry Test Practice initialized successfully!');
+  console.log('Saylani Entry Test Practice initialized successfully!');
   console.log('To add MCQs, edit the mcqsData object in the JavaScript code.');
 });
 
