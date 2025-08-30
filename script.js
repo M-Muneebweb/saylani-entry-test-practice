@@ -2088,264 +2088,507 @@ const mcqsData = {
   // MATHEMATICS MCQs (50 Questions)
   // Add your mathematics MCQs here
   math: [
-    
-     {
-         question: "What is 15 + 25?",
-         options: {
-             A: "35",
-             B: "40",
-             C: "45",
-             D: "50"
-         },
-         correct: "B"
-
-     },
-    {
-    question: "What is 5 + 3?",
-    options: { A: "6", B: "7", C: "8", D: "9" },
-    correct: "C"
+  {
+    "question": "If f(x) = x³ - 3x + 2, what is the value of f'(2)?",
+    "options": {
+      "A": "9",
+      "B": "12",
+      "C": "15",
+      "D": "18"
+    },
+    "correct": "A"
   },
   {
-    question: "What is 12 × 3?",
-    options: { A: "36", B: "30", C: "42", D: "32" },
-    correct: "A"
+    "question": "What is the sum of the infinite geometric series 1 + 1/3 + 1/9 + 1/27 + ...?",
+    "options": {
+      "A": "3/2",
+      "B": "2/3",
+      "C": "4/3",
+      "D": "5/3"
+    },
+    "correct": "A"
   },
   {
-    question: "What is the square root of 49?",
-    options: { A: "5", B: "6", C: "7", D: "8" },
-    correct: "C"
+    "question": "If log₂(x) + log₂(x+3) = 3, what is the value of x?",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "5"
+    },
+    "correct": "A"
   },
   {
-    question: "Solve: 15 ÷ 3 =",
-    options: { A: "3", B: "5", C: "6", D: "4" },
-    correct: "B"
+    "question": "What is the determinant of the matrix [[2, 3], [4, 5]]?",
+    "options": {
+      "A": "-2",
+      "B": "2",
+      "C": "-1",
+      "D": "1"
+    },
+    "correct": "A"
   },
   {
-    question: "What is 100 - 75?",
-    options: { A: "20", B: "30", C: "25", D: "15" },
-    correct: "C"
+    "question": "If sin(θ) = 3/5 and θ is in the second quadrant, what is cos(θ)?",
+    "options": {
+      "A": "4/5",
+      "B": "-4/5",
+      "C": "3/4",
+      "D": "-3/4"
+    },
+    "correct": "B"
   },
   {
-    question: "What comes after 89?",
-    options: { A: "88", B: "90", C: "91", D: "92" },
-    correct: "B"
+    "question": "What is the limit of (sin(x)/x) as x approaches 0?",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "∞",
+      "D": "undefined"
+    },
+    "correct": "B"
   },
   {
-    question: "How many sides does a triangle have?",
-    options: { A: "3", B: "4", C: "5", D: "6" },
-    correct: "A"
+    "question": "If z = 3 + 4i, what is |z|²?",
+    "options": {
+      "A": "25",
+      "B": "7",
+      "C": "12",
+      "D": "16"
+    },
+    "correct": "A"
   },
   {
-    question: "What is 9 × 6?",
-    options: { A: "54", B: "45", C: "63", D: "56" },
-    correct: "A"
+    "question": "What is the coefficient of x⁵ in the expansion of (x + 2)⁷?",
+    "options": {
+      "A": "84",
+      "B": "168",
+      "C": "252",
+      "D": "336"
+    },
+    "correct": "A"
   },
   {
-    question: "What is 144 ÷ 12?",
-    options: { A: "10", B: "11", C: "12", D: "13" },
-    correct: "C"
+    "question": "If f(x) = e^(x²), what is f'(x)?",
+    "options": {
+      "A": "2xe^(x²)",
+      "B": "e^(x²)",
+      "C": "x²e^(x²)",
+      "D": "2e^(x²)"
+    },
+    "correct": "A"
   },
   {
-    question: "What is 11 squared?",
-    options: { A: "121", B: "111", C: "110", D: "122" },
-    correct: "A"
+    "question": "What is the area under the curve y = x² from x = 0 to x = 2?",
+    "options": {
+      "A": "8/3",
+      "B": "4",
+      "C": "6",
+      "D": "8"
+    },
+    "correct": "A"
   },
   {
-    question: "What is the value of π (pi) approximately?",
-    options: { A: "3.14", B: "2.14", C: "4.14", D: "3.41" },
-    correct: "A"
+    "question": "If the roots of x² + bx + c = 0 are 2 and 3, what is the value of b + c?",
+    "options": {
+      "A": "1",
+      "B": "-1",
+      "C": "11",
+      "D": "-11"
+    },
+    "correct": "A"
   },
   {
-    question: "How many degrees in a right angle?",
-    options: { A: "45", B: "90", C: "180", D: "360" },
-    correct: "B"
+    "question": "What is the value of ∫₀^π sin(x) dx?",
+    "options": {
+      "A": "2",
+      "B": "1",
+      "C": "0",
+      "D": "π"
+    },
+    "correct": "A"
   },
   {
-    question: "Solve: 2³ =",
-    options: { A: "6", B: "8", C: "9", D: "7" },
-    correct: "B"
+    "question": "If A = [[1, 2], [3, 4]], what is A⁻¹?",
+    "options": {
+      "A": "[[-2, 1], [3/2, -1/2]]",
+      "B": "[[4, -2], [-3, 1]]",
+      "C": "[[-4, 2], [3, -1]]",
+      "D": "[[2, -1], [-3/2, 1/2]]"
+    },
+    "correct": "A"
   },
   {
-    question: "Which number is even?",
-    options: { A: "5", B: "7", C: "8", D: "9" },
-    correct: "C"
+    "question": "What is the equation of the tangent line to y = x³ - 2x at x = 1?",
+    "options": {
+      "A": "y = x - 2",
+      "B": "y = 2x - 3",
+      "C": "y = x - 1",
+      "D": "y = 3x - 4"
+    },
+    "correct": "A"
   },
   {
-    question: "Which is a prime number?",
-    options: { A: "4", B: "6", C: "9", D: "7" },
-    correct: "D"
+    "question": "If vectors u = (2, 3) and v = (1, -2), what is u · v?",
+    "options": {
+      "A": "-4",
+      "B": "4",
+      "C": "-2",
+      "D": "8"
+    },
+    "correct": "A"
   },
   {
-    question: "What is 0 × 9?",
-    options: { A: "0", B: "9", C: "1", D: "None" },
-    correct: "A"
+    "question": "What is the radius of convergence of the power series Σ(n=0 to ∞) xⁿ/n!?",
+    "options": {
+      "A": "∞",
+      "B": "1",
+      "C": "e",
+      "D": "0"
+    },
+    "correct": "A"
   },
   {
-    question: "What is 3/6 in simplest form?",
-    options: { A: "1/3", B: "1/2", C: "2/3", D: "3/4" },
-    correct: "B"
+    "question": "If P(A) = 0.6, P(B) = 0.4, and P(A ∩ B) = 0.2, what is P(A ∪ B)?",
+    "options": {
+      "A": "0.8",
+      "B": "0.6",
+      "C": "1.0",
+      "D": "0.4"
+    },
+    "correct": "A"
   },
   {
-    question: "Solve: 6² =",
-    options: { A: "36", B: "12", C: "18", D: "24" },
-    correct: "A"
+    "question": "What is the general solution to the differential equation dy/dx = 2y?",
+    "options": {
+      "A": "y = Ce^(2x)",
+      "B": "y = C + 2x",
+      "C": "y = 2Ce^x",
+      "D": "y = Ce^(x/2)"
+    },
+    "correct": "A"
   },
   {
-    question: "What is the cube of 2?",
-    options: { A: "6", B: "8", C: "4", D: "10" },
-    correct: "B"
+    "question": "If f(x) = ln(x), what is the second derivative f''(x)?",
+    "options": {
+      "A": "-1/x²",
+      "B": "1/x²",
+      "C": "-1/x",
+      "D": "1/x"
+    },
+    "correct": "A"
   },
   {
-    question: "Which is greater: 0.7 or 0.09?",
-    options: { A: "0.7", B: "0.09", C: "Equal", D: "Can't say" },
-    correct: "A"
+    "question": "What is the value of the double integral ∫₀¹∫₀¹ xy dxdy?",
+    "options": {
+      "A": "1/4",
+      "B": "1/2",
+      "C": "1/3",
+      "D": "1"
+    },
+    "correct": "A"
   },
   {
-    question: "What is 25% of 200?",
-    options: { A: "25", B: "50", C: "75", D: "100" },
-    correct: "B"
+    "question": "If the eigenvalues of a 2×2 matrix are 3 and -1, what is the trace of the matrix?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "-1",
+      "D": "4"
+    },
+    "correct": "A"
   },
   {
-    question: "Which number is a multiple of 3?",
-    options: { A: "10", B: "12", C: "14", D: "17" },
-    correct: "B"
+    "question": "What is the Fourier series coefficient a₀ for f(x) = x on [-π, π]?",
+    "options": {
+      "A": "0",
+      "B": "π",
+      "C": "2π",
+      "D": "π/2"
+    },
+    "correct": "A"
   },
   {
-    question: "What is 5 × 0?",
-    options: { A: "0", B: "5", C: "1", D: "Undefined" },
-    correct: "A"
+    "question": "If z₁ = 1 + i and z₂ = 2 - i, what is z₁z₂?",
+    "options": {
+      "A": "3 + i",
+      "B": "2 + 2i",
+      "C": "1 + 3i",
+      "D": "3 - i"
+    },
+    "correct": "A"
   },
   {
-    question: "How many months have 30 days?",
-    options: { A: "4", B: "6", C: "11", D: "12" },
-    correct: "A"
+    "question": "What is the arc length of the curve y = x^(3/2) from x = 0 to x = 1?",
+    "options": {
+      "A": "(8√13 - 8)/27",
+      "B": "2/3",
+      "C": "1",
+      "D": "4/3"
+    },
+    "correct": "A"
   },
   {
-    question: "Solve: 100 ÷ 10 =",
-    options: { A: "5", B: "10", C: "20", D: "15" },
-    correct: "B"
+    "question": "If the Taylor series of f(x) around x = 0 is x - x³/3! + x⁵/5! - ..., what is f(x)?",
+    "options": {
+      "A": "sin(x)",
+      "B": "cos(x)",
+      "C": "e^x",
+      "D": "ln(1+x)"
+    },
+    "correct": "A"
   },
   {
-    question: "What is 10²?",
-    options: { A: "20", B: "100", C: "110", D: "90" },
-    correct: "B"
+    "question": "What is the value of the improper integral ∫₁^∞ 1/x² dx?",
+    "options": {
+      "A": "1",
+      "B": "∞",
+      "C": "2",
+      "D": "1/2"
+    },
+    "correct": "A"
   },
   {
-    question: "What is the smallest even number?",
-    options: { A: "0", B: "1", C: "2", D: "3" },
-    correct: "A"
+    "question": "If the parametric equations are x = t², y = t³, what is dy/dx in terms of t?",
+    "options": {
+      "A": "3t/2",
+      "B": "2t/3",
+      "C": "3t²/2t",
+      "D": "t/2"
+    },
+    "correct": "A"
   },
   {
-    question: "What is 1/2 of 50?",
-    options: { A: "20", B: "25", C: "30", D: "15" },
-    correct: "B"
+    "question": "What is the curl of the vector field F = (y, -x, 0)?",
+    "options": {
+      "A": "(0, 0, -2)",
+      "B": "(0, 0, 2)",
+      "C": "(2, 0, 0)",
+      "D": "(0, 2, 0)"
+    },
+    "correct": "A"
   },
   {
-    question: "If x = 4, what is 2x + 3?",
-    options: { A: "8", B: "9", C: "10", D: "11" },
-    correct: "D"
+    "question": "If u and v are orthogonal unit vectors in R³, what is |u + v|?",
+    "options": {
+      "A": "√2",
+      "B": "1",
+      "C": "2",
+      "D": "0"
+    },
+    "correct": "A"
   },
   {
-    question: "Which number is divisible by 5?",
-    options: { A: "13", B: "17", C: "20", D: "22" },
-    correct: "C"
+    "question": "What is the dimension of the solution space of the homogeneous system Ax = 0 if A is 3×5 with rank 2?",
+    "options": {
+      "A": "3",
+      "B": "2",
+      "C": "5",
+      "D": "1"
+    },
+    "correct": "A"
   },
   {
-    question: "What is 10 + 9 - 4?",
-    options: { A: "15", B: "16", C: "14", D: "13" },
-    correct: "A"
+    "question": "If f(x,y) = x²y + y³, what is ∂²f/∂x∂y?",
+    "options": {
+      "A": "2x",
+      "B": "2y",
+      "C": "x²",
+      "D": "3y²"
+    },
+    "correct": "A"
   },
   {
-    question: "What is the average of 5, 10, and 15?",
-    options: { A: "10", B: "12", C: "11", D: "9" },
-    correct: "A"
+    "question": "What is the period of the function f(x) = 3sin(2x) + 4cos(3x)?",
+    "options": {
+      "A": "2π",
+      "B": "π",
+      "C": "6π",
+      "D": "π/3"
+    },
+    "correct": "A"
   },
   {
-    question: "What is 7 × 7?",
-    options: { A: "49", B: "56", C: "63", D: "77" },
-    correct: "A"
+    "question": "If the characteristic polynomial of a matrix is λ² - 5λ + 6, what are the eigenvalues?",
+    "options": {
+      "A": "2 and 3",
+      "B": "1 and 6",
+      "C": "-2 and -3",
+      "D": "5 and -1"
+    },
+    "correct": "A"
   },
   {
-    question: "How many hours in 2 days?",
-    options: { A: "24", B: "36", C: "48", D: "72" },
-    correct: "C"
+    "question": "What is the remainder when x⁴ + 3x² + 2 is divided by x² + 1?",
+    "options": {
+      "A": "4x² + 3",
+      "B": "2x + 3",
+      "C": "5",
+      "D": "3x + 2"
+    },
+    "correct": "A"
   },
   {
-    question: "What is the perimeter of a square with side 4?",
-    options: { A: "12", B: "16", C: "8", D: "20" },
-    correct: "B"
+    "question": "If the Laplace transform of f(t) is F(s) = 1/(s² + 4), what is f(t)?",
+    "options": {
+      "A": "(1/2)sin(2t)",
+      "B": "sin(2t)",
+      "C": "cos(2t)",
+      "D": "e^(-2t)"
+    },
+    "correct": "A"
   },
   {
-    question: "What is the area of rectangle: 4 × 3?",
-    options: { A: "7", B: "12", C: "14", D: "16" },
-    correct: "B"
+    "question": "What is the maximum value of f(x,y) = xy subject to x² + y² = 1?",
+    "options": {
+      "A": "1/2",
+      "B": "1",
+      "C": "√2/2",
+      "D": "2"
+    },
+    "correct": "A"
   },
   {
-    question: "Which number is not a factor of 20?",
-    options: { A: "2", B: "4", C: "5", D: "9" },
-    correct: "D"
+    "question": "If the generating function for a sequence is 1/(1-2x), what is the nth term?",
+    "options": {
+      "A": "2ⁿ",
+      "B": "n!",
+      "C": "2n",
+      "D": "n²"
+    },
+    "correct": "A"
   },
   {
-    question: "How many zeroes in one thousand?",
-    options: { A: "1", B: "2", C: "3", D: "4" },
-    correct: "C"
+    "question": "What is the residue of f(z) = 1/(z²(z-1)) at z = 0?",
+    "options": {
+      "A": "-1",
+      "B": "1",
+      "C": "0",
+      "D": "2"
+    },
+    "correct": "A"
   },
   {
-    question: "What is 15% of 100?",
-    options: { A: "10", B: "15", C: "20", D: "25" },
-    correct: "B"
+    "question": "If the variance of X is 4 and the variance of Y is 9, what is Var(X-Y) if X and Y are independent?",
+    "options": {
+      "A": "13",
+      "B": "5",
+      "C": "-5",
+      "D": "36"
+    },
+    "correct": "A"
   },
   {
-    question: "What is the next even number after 18?",
-    options: { A: "19", B: "20", C: "21", D: "22" },
-    correct: "B"
+    "question": "What is the solution to the recurrence relation aₙ = 3aₙ₋₁ - 2aₙ₋₂ with a₀ = 1, a₁ = 2?",
+    "options": {
+      "A": "aₙ = 2ⁿ",
+      "B": "aₙ = 3ⁿ",
+      "C": "aₙ = n + 1",
+      "D": "aₙ = 2ⁿ + 1"
+    },
+    "correct": "A"
   },
   {
-    question: "Which is a proper fraction?",
-    options: { A: "5/2", B: "4/4", C: "3/5", D: "7/3" },
-    correct: "C"
+    "question": "If f(z) = z³ - 2z + 1, how many zeros does f have in |z| < 1?",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "0"
+    },
+    "correct": "A"
   },
   {
-    question: "Solve: (5 + 3) × 2 =",
-    options: { A: "14", B: "16", C: "10", D: "12" },
-    correct: "B"
+    "question": "What is the coefficient of x⁴y³ in the expansion of (x + y + z)⁷?",
+    "options": {
+      "A": "0",
+      "B": "35",
+      "C": "105",
+      "D": "210"
+    },
+    "correct": "A"
   },
   {
-    question: "What is the value of 3⁰?",
-    options: { A: "1", B: "3", C: "0", D: "Undefined" },
-    correct: "A"
+    "question": "If the Green's function for d²y/dx² + y = 0 with y(0) = y(π) = 0 is G(x,ξ), what is ∫₀^π G(x,ξ)sin(ξ) dξ?",
+    "options": {
+      "A": "0",
+      "B": "π/2",
+      "C": "1",
+      "D": "sin(x)"
+    },
+    "correct": "A"
   },
   {
-    question: "Which is a negative number?",
-    options: { A: "-5", B: "0", C: "5", D: "1" },
-    correct: "A"
+    "question": "What is the chromatic polynomial of a complete graph K₄?",
+    "options": {
+      "A": "λ(λ-1)(λ-2)(λ-3)",
+      "B": "λ⁴ - 6λ³ + 11λ² - 6λ",
+      "C": "λ⁴",
+      "D": "(λ-1)⁴"
+    },
+    "correct": "A"
   },
   {
-    question: "What is 0.5 as a fraction?",
-    options: { A: "1/2", B: "1/3", C: "1/4", D: "2/5" },
-    correct: "A"
+    "question": "If the Hessian matrix of f(x,y) at (0,0) has eigenvalues 2 and -1, what type of critical point is (0,0)?",
+    "options": {
+      "A": "Saddle point",
+      "B": "Local minimum",
+      "C": "Local maximum",
+      "D": "Cannot determine"
+    },
+    "correct": "A"
   },
   {
-    question: "Which is an odd number?",
-    options: { A: "6", B: "8", C: "10", D: "13" },
-    correct: "D"
+    "question": "What is the order of the differential equation y''' + sin(x)y' + y = e^x?",
+    "options": {
+      "A": "3",
+      "B": "1",
+      "C": "2",
+      "D": "4"
+    },
+    "correct": "A"
   },
   {
-    question: "What is 6 × 8?",
-    options: { A: "48", B: "42", C: "56", D: "36" },
-    correct: "A"
+    "question": "If the moment generating function of X is M(t) = e^(2t + 3t²), what is E[X]?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "6",
+      "D": "5"
+    },
+    "correct": "A"
   },
   {
-    question: "What is the sum of angles in a triangle?",
-    options: { A: "180°", B: "90°", C: "360°", D: "270°" },
-    correct: "A"
+    "question": "What is the Jordan canonical form of the matrix [[3, 1], [0, 3]]?",
+    "options": {
+      "A": "[[3, 1], [0, 3]]",
+      "B": "[[3, 0], [0, 3]]",
+      "C": "[[3, 0], [1, 3]]",
+      "D": "[[1, 3], [0, 1]]"
+    },
+    "correct": "A"
   },
   {
-    question: "What is 2/4 in simplest form?",
-    options: { A: "1/2", B: "2/4", C: "2/2", D: "1/4" },
-    correct: "A"
+    "question": "If the power series Σ(n=1 to ∞) aₙxⁿ converges for |x| < R, what is the radius of convergence of Σ(n=1 to ∞) naₙxⁿ⁻¹?",
+    "options": {
+      "A": "R",
+      "B": "R/2",
+      "C": "2R",
+      "D": "1/R"
+    },
+    "correct": "A"
+  },
+  {
+    "question": "What is the number of ways to arrange the letters in MATHEMATICS?",
+    "options": {
+      "A": "4,989,600",
+      "B": "11!/2!2!",
+      "C": "39,916,800",
+      "D": "2,494,800"
+    },
+    "correct": "A"
   }
-  ]
+]
 };
 
 // ============================================
@@ -2987,3 +3230,4 @@ window.addEventListener('error', (e) => {
 // ============================================
 // END OF JAVASCRIPT CODE
 // ============================================
+
