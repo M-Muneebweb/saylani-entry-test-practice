@@ -48,1004 +48,1012 @@ const mcqsData = {
   // COMPUTER SUBJECT MCQs (50 Questions)
   // Add your computer science MCQs here
   computer: [
-
-    {
-      question: "Which part of the computer is considered the brain?",
-      options: {
-        A: "Monitor",
-        B: "CPU",
-        C: "Keyboard",
-        D: "Mouse"
-      },
-      correct: "B"
+  {
+    question: "Which data structure is used to implement function calls in programming languages?",
+    options: {
+      A: "Queue",
+      B: "Stack", 
+      C: "Linked List",
+      D: "Hash Table"
     },
-    {
-      question: "What does HTML stand for?",
-      options: {
-        A: "Hyper Trainer Marking Language",
-        B: "Hyper Text Markup Language",
-        C: "High Text Machine Language",
-        D: "None of the above"
-      },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "What is the time complexity of searching in a balanced Binary Search Tree?",
+    options: {
+      A: "O(n)",
+      B: "O(log n)",
+      C: "O(n²)",
+      D: "O(1)"
     },
-    {
-      question: "Which device is used to convert digital signals to analog?",
-      options: {
-        A: "Router",
-        B: "Modem",
-        C: "Switch",
-        D: "Hub"
-      },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "Which sorting algorithm has the best average case time complexity?",
+    options: {
+      A: "Bubble Sort",
+      B: "Selection Sort", 
+      C: "Merge Sort",
+      D: "Insertion Sort"
     },
-    {
-      question: "What does RAM stand for?",
-      options: {
-        A: "Read Access Memory",
-        B: "Random Access Memory",
-        C: "Run Accept Memory",
-        D: "Random Allocate Memory"
-      },
-      correct: "B"
+    correct: "C"
+  },
+  {
+    question: "What does ACID stand for in database systems?",
+    options: {
+      A: "Atomicity, Consistency, Isolation, Durability",
+      B: "Accuracy, Consistency, Integration, Database",
+      C: "Atomic, Complete, Isolated, Durable",
+      D: "All Complete Information Database"
     },
-    {
-      question: "Which of the following is an output device?",
-      options: {
-        A: "Scanner",
-        B: "Keyboard",
-        C: "Monitor",
-        D: "Mouse"
-      },
-      correct: "C"
+    correct: "A"
+  },
+  {
+    question: "Which protocol is used for secure communication over the internet?",
+    options: {
+      A: "HTTP",
+      B: "FTP",
+      C: "HTTPS",
+      D: "SMTP"
     },
-    {
-      question: "What is the extension of a Python file?",
-      options: {
-        A: ".java",
-        B: ".py",
-        C: ".cpp",
-        D: ".txt"
-      },
-      correct: "B"
+    correct: "C"
+  },
+  {
+    question: "What is the maximum number of nodes in a binary tree of height h?",
+    options: {
+      A: "2^h - 1",
+      B: "2^(h+1) - 1",
+      C: "2^h",
+      D: "h + 1"
     },
-    {
-      question: "Which one is a programming language?",
-      options: {
-        A: "HTTP",
-        B: "HTML",
-        C: "FTP",
-        D: "C++"
-      },
-      correct: "D"
+    correct: "B"
+  },
+  {
+    question: "Which design pattern ensures only one instance of a class exists?",
+    options: {
+      A: "Factory Pattern",
+      B: "Observer Pattern",
+      C: "Singleton Pattern",
+      D: "Strategy Pattern"
     },
-    {
-      question: "Which part stores permanent data?",
-      options: {
-        A: "RAM",
-        B: "Cache",
-        C: "ROM",
-        D: "CPU"
-      },
-      correct: "C"
+    correct: "C"
+  },
+  {
+    question: "What is the space complexity of the merge sort algorithm?",
+    options: {
+      A: "O(1)",
+      B: "O(log n)",
+      C: "O(n)",
+      D: "O(n²)"
     },
-    {
-      question: "Which one is used to connect to the internet?",
-      options: {
-        A: "Printer",
-        B: "Scanner",
-        C: "Modem",
-        D: "Keyboard"
-      },
-      correct: "C"
+    correct: "C"
+  },
+  {
+    question: "Which normal form eliminates transitive dependencies?",
+    options: {
+      A: "1NF",
+      B: "2NF",
+      C: "3NF",
+      D: "BCNF"
     },
-    {
-      question: "What does CPU stand for?",
-      options: {
-        A: "Central Performance Unit",
-        B: "Central Process Unit",
-        C: "Central Processing Unit",
-        D: "Computer Processing Unit"
-      },
-      correct: "C"
+    correct: "C"
+  },
+  {
+    question: "What is the worst-case time complexity of Quick Sort?",
+    options: {
+      A: "O(n log n)",
+      B: "O(n²)",
+      C: "O(n)",
+      D: "O(log n)"
     },
-    {
-      question: "Which software lets you browse the internet?",
-      options: {
-        A: "Excel",
-        B: "Photoshop",
-        C: "Chrome",
-        D: "Word"
-      },
-      correct: "C"
+    correct: "B"
+  },
+  {
+    question: "Which layer of the OSI model handles routing?",
+    options: {
+      A: "Data Link Layer",
+      B: "Network Layer",
+      C: "Transport Layer",
+      D: "Session Layer"
     },
-    {
-      question: "Which is not an input device?",
-      options: {
-        A: "Mouse",
-        B: "Microphone",
-        C: "Printer",
-        D: "Scanner"
-      },
-      correct: "C"
+    correct: "B"
+  },
+  {
+    question: "What is deadlock in operating systems?",
+    options: {
+      A: "When a process terminates unexpectedly",
+      B: "When two or more processes wait indefinitely for each other",
+      C: "When CPU utilization is 100%",
+      D: "When memory is full"
     },
-    {
-      question: "Which unit is used to measure computer memory?",
-      options: {
-        A: "Liter",
-        B: "Gram",
-        C: "Byte",
-        D: "Meter"
-      },
-      correct: "C"
+    correct: "B"
+  },
+  {
+    question: "Which algorithm is used to find the shortest path in a weighted graph?",
+    options: {
+      A: "Breadth-First Search",
+      B: "Depth-First Search",
+      C: "Dijkstra's Algorithm",
+      D: "Binary Search"
     },
-    {
-      question: "Which one is a storage device?",
-      options: {
-        A: "Mouse",
-        B: "Keyboard",
-        C: "Pen Drive",
-        D: "Monitor"
-      },
-      correct: "C"
+    correct: "C"
+  },
+  {
+    question: "What is the purpose of virtual memory in operating systems?",
+    options: {
+      A: "To increase CPU speed",
+      B: "To provide more storage than physical RAM",
+      C: "To encrypt data",
+      D: "To manage network connections"
     },
-    {
-      question: "Which one is system software?",
-      options: {
-        A: "MS Word",
-        B: "Photoshop",
-        C: "Windows",
-        D: "Excel"
-      },
-      correct: "C"
+    correct: "B"
+  },
+  {
+    question: "Which data structure is best for implementing LRU cache?",
+    options: {
+      A: "Array",
+      B: "Stack",
+      C: "Hash Map + Doubly Linked List",
+      D: "Binary Tree"
     },
-    {
-      question: "What does URL stand for?",
-      options: {
-        A: "Uniform Resource Locator",
-        B: "Uniform Resource Link",
-        C: "Universal Reference Link",
-        D: "Universal Resource Location"
-      },
-      correct: "A"
+    correct: "C"
+  },
+  {
+    question: "What is the maximum number of edges in a simple undirected graph with n vertices?",
+    options: {
+      A: "n",
+      B: "n-1",
+      C: "n(n-1)/2",
+      D: "n²"
     },
-    {
-      question: "Which shortcut key is used to copy?",
-      options: {
-        A: "Ctrl + C",
-        B: "Ctrl + V",
-        C: "Ctrl + X",
-        D: "Ctrl + P"
-      },
-      correct: "A"
+    correct: "C"
+  },
+  {
+    question: "Which concurrency control technique prevents lost updates?",
+    options: {
+      A: "Indexing",
+      B: "Normalization",
+      C: "Locking",
+      D: "Partitioning"
     },
-    {
-      question: "Which company developed Windows?",
-      options: {
-        A: "Apple",
-        B: "Microsoft",
-        C: "Google",
-        D: "IBM"
-      },
-      correct: "B"
+    correct: "C"
+  },
+  {
+    question: "What is the time complexity of building a heap from an unsorted array?",
+    options: {
+      A: "O(n log n)",
+      B: "O(n²)",
+      C: "O(n)",
+      D: "O(log n)"
     },
-    {
-      question: "What is the full form of PDF?",
-      options: {
-        A: "Printable Document Format",
-        B: "Portable Document Format",
-        C: "Public Document File",
-        D: "Program Data File"
-      },
-      correct: "B"
+    correct: "C"
+  },
+  {
+    question: "Which scheduling algorithm can cause starvation?",
+    options: {
+      A: "First Come First Serve",
+      B: "Round Robin",
+      C: "Shortest Job First",
+      D: "Priority Scheduling"
     },
-    {
-      question: "What is a GUI?",
-      options: {
-        A: "Graphical User Interface",
-        B: "Global User Input",
-        C: "General Use Interface",
-        D: "Graphical Utility Input"
-      },
-      correct: "A"
+    correct: "D"
+  },
+  {
+    question: "What is the minimum number of colors needed to color any planar graph?",
+    options: {
+      A: "3",
+      B: "4",
+      C: "5",
+      D: "6"
     },
-    {
-      question: "Which of these is a search engine?",
-      options: {
-        A: "Yahoo",
-        B: "Facebook",
-        C: "Gmail",
-        D: "PowerPoint"
-      },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "Which tree traversal gives nodes in ascending order for a BST?",
+    options: {
+      A: "Pre-order",
+      B: "Post-order",
+      C: "In-order",
+      D: "Level-order"
     },
-    {
-      question: "Which of these is an operating system?",
-      options: {
-        A: "Google",
-        B: "Linux",
-        C: "Intel",
-        D: "Firefox"
-      },
-      correct: "B"
+    correct: "C"
+  },
+  {
+    question: "What is thrashing in virtual memory systems?",
+    options: {
+      A: "Frequent page faults causing poor performance",
+      B: "Memory corruption",
+      C: "CPU overheating",
+      D: "Network congestion"
     },
-    {
-      question: "Which key is used to refresh a webpage?",
-      options: {
-        A: "F5",
-        B: "F2",
-        C: "Ctrl",
-        D: "Esc"
-      },
-      correct: "A"
+    correct: "A"
+  },
+  {
+    question: "Which algorithm is used for finding strongly connected components?",
+    options: {
+      A: "Kruskal's Algorithm",
+      B: "Prim's Algorithm",
+      C: "Tarjan's Algorithm",
+      D: "Bellman-Ford Algorithm"
     },
-    {
-      question: "Which of the following is a web browser?",
-      options: {
-        A: "MS Excel",
-        B: "Google Chrome",
-        C: "Notepad",
-        D: "Paint"
-      },
-      correct: "B"
+    correct: "C"
+  },
+  {
+    question: "What is the space-time tradeoff in computing?",
+    options: {
+      A: "Using more memory to reduce computation time",
+      B: "Using less memory to increase computation time",
+      C: "Both A and B",
+      D: "Neither A nor B"
     },
-    {
-      question: "Which is the fastest memory?",
-      options: {
-        A: "RAM",
-        B: "Cache",
-        C: "Hard Disk",
-        D: "CD-ROM"
-      },
-      correct: "B"
+    correct: "C"
+  },
+  {
+    question: "Which index type provides fastest access in databases?",
+    options: {
+      A: "B-Tree Index",
+      B: "Hash Index",
+      C: "Bitmap Index",
+      D: "Clustered Index"
     },
-    {
-      question: "Which file format is used for web pages?",
-      options: {
-        A: ".docx",
-        B: ".html",
-        C: ".mp3",
-        D: ".xls"
-      },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "What is the banker's algorithm used for?",
+    options: {
+      A: "Shortest path finding",
+      B: "Deadlock avoidance",
+      C: "Memory allocation",
+      D: "Process scheduling"
     },
-    {
-      question: "What does ICT stand for?",
-      options: {
-        A: "Information Communication Technology",
-        B: "Internet Computer Technology",
-        C: "Internal Communication Tech",
-        D: "Instant Communication Tool"
-      },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "Which consistency model allows reads to return stale data?",
+    options: {
+      A: "Strong Consistency",
+      B: "Eventual Consistency",
+      C: "Sequential Consistency",
+      D: "Linearizability"
     },
-    {
-      question: "What is an IP address?",
-      options: {
-        A: "Internal Port",
-        B: "Internet Protocol",
-        C: "International Point",
-        D: "Intel Port"
-      },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "What is the maximum height of an AVL tree with n nodes?",
+    options: {
+      A: "log n",
+      B: "1.44 log n",
+      C: "n",
+      D: "√n"
     },
-    {
-      question: "Which of the following is a spreadsheet program?",
-      options: {
-        A: "MS Excel",
-        B: "MS Word",
-        C: "PowerPoint",
-        D: "Paint"
-      },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "Which memory allocation technique reduces external fragmentation?",
+    options: {
+      A: "Fixed Partitioning",
+      B: "Dynamic Partitioning",
+      C: "Paging",
+      D: "Segmentation"
     },
-    {
-      question: "Which of these is not hardware?",
-      options: {
-        A: "Monitor",
-        B: "Antivirus",
-        C: "Printer",
-        D: "Keyboard"
-      },
-      correct: "B"
+    correct: "C"
+  },
+  {
+    question: "What is the purpose of DNS in networking?",
+    options: {
+      A: "Data encryption",
+      B: "Domain name to IP address translation",
+      C: "File transfer",
+      D: "Email routing"
     },
-    {
-      question: "What does LAN stand for?",
-      options: {
-        A: "Large Area Network",
-        B: "Local Area Network",
-        C: "Long Access Network",
-        D: "Local Assignment Network"
-      },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "Which garbage collection algorithm has the least pause time?",
+    options: {
+      A: "Mark and Sweep",
+      B: "Copying Collector",
+      C: "Incremental Collector",
+      D: "Reference Counting"
     },
-    {
-      question: "Which port is used for internet cable?",
-      options: {
-        A: "USB",
-        B: "HDMI",
-        C: "Ethernet",
-        D: "Audio Jack"
-      },
-      correct: "C"
+    correct: "C"
+  },
+  {
+    question: "What is the chromatic number of a complete graph with n vertices?",
+    options: {
+      A: "2",
+      B: "3",
+      C: "n-1",
+      D: "n"
     },
-    {
-      question: "Which is an anti-virus software?",
-      options: {
-        A: "Chrome",
-        B: "Avast",
-        C: "Excel",
-        D: "Edge"
-      },
-      correct: "B"
+    correct: "D"
+  },
+  {
+    question: "Which join operation in SQL is most expensive?",
+    options: {
+      A: "Inner Join",
+      B: "Left Join",
+      C: "Cross Join",
+      D: "Right Join"
     },
-    {
-      question: "Which programming language is mostly used in AI?",
-      options: {
-        A: "Python",
-        B: "HTML",
-        C: "CSS",
-        D: "SQL"
-      },
-      correct: "A"
+    correct: "C"
+  },
+  {
+    question: "What is the minimum spanning tree of a graph?",
+    options: {
+      A: "Tree with minimum number of edges",
+      B: "Tree connecting all vertices with minimum total weight",
+      C: "Tree with maximum height",
+      D: "Binary tree with minimum nodes"
     },
-    {
-      question: "Which one is a cloud storage?",
-      options: {
-        A: "Google Drive",
-        B: "SSD",
-        C: "Flash Drive",
-        D: "Hard Disk"
-      },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "Which cache replacement policy has the lowest miss rate theoretically?",
+    options: {
+      A: "FIFO",
+      B: "LRU",
+      C: "LFU",
+      D: "Optimal (OPT)"
     },
-    {
-      question: "Which of these is a file extension?",
-      options: {
-        A: ".exe",
-        B: "app",
-        C: "run",
-        D: "soft"
-      },
-      correct: "A"
+    correct: "D"
+  },
+  {
+    question: "What is the purpose of semaphores in operating systems?",
+    options: {
+      A: "Memory management",
+      B: "Process synchronization",
+      C: "File system management",
+      D: "Network communication"
     },
-    {
-      question: "Which one is a mobile OS?",
-      options: {
-        A: "Linux",
-        B: "Android",
-        C: "Windows 10",
-        D: "Ubuntu"
-      },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "Which HTTP status code indicates server error?",
+    options: {
+      A: "200",
+      B: "404",
+      C: "500",
+      D: "301"
     },
-    {
-      question: "Which of these is not an application software?",
-      options: {
-        A: "MS Paint",
-        B: "MS DOS",
-        C: "Photoshop",
-        D: "MS Word"
-      },
-      correct: "B"
+    correct: "C"
+  },
+  {
+    question: "What is the difference between process and thread?",
+    options: {
+      A: "No difference",
+      B: "Threads share memory, processes don't",
+      C: "Processes are faster than threads",
+      D: "Threads can't communicate"
     },
-    {
-      question: "Which of the following is a social media platform?",
-      options: {
-        A: "Facebook",
-        B: "Excel",
-        C: "Chrome",
-        D: "Photoshop"
-      },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "Which algorithm solves the all-pairs shortest path problem?",
+    options: {
+      A: "Dijkstra's Algorithm",
+      B: "Bellman-Ford Algorithm",
+      C: "Floyd-Warshall Algorithm",
+      D: "A* Algorithm"
     },
-    {
-      question: "Which command is used to save a file?",
-      options: {
-        A: "Ctrl + C",
-        B: "Ctrl + S",
-        C: "Ctrl + X",
-        D: "Ctrl + Z"
-      },
-      correct: "B"
+    correct: "C"
+  },
+  {
+    question: "What is referential integrity in databases?",
+    options: {
+      A: "Data encryption",
+      B: "Foreign key constraints",
+      C: "Index optimization",
+      D: "Query performance"
     },
-    {
-      question: "What does BIOS stand for?",
-      options: {
-        A: "Basic Input Output System",
-        B: "Binary Integrated Operating System",
-        C: "Basic Internal Output Signal",
-        D: "Base Input Output Server"
-      },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "Which scheduling algorithm provides the best average waiting time?",
+    options: {
+      A: "FCFS",
+      B: "SJF",
+      C: "Round Robin",
+      D: "Priority Scheduling"
     },
-    {
-      question: "Which input device is used for drawing?",
-      options: {
-        A: "Keyboard",
-        B: "Scanner",
-        C: "Light Pen",
-        D: "Microphone"
-      },
-      correct: "C"
+    correct: "B"
+  },
+  {
+    question: "What is the purpose of hashing in data structures?",
+    options: {
+      A: "Data encryption",
+      B: "Fast data retrieval",
+      C: "Data compression",
+      D: "Data sorting"
     },
-    {
-      question: "Which of the following is an email service?",
-      options: {
-        A: "Google Docs",
-        B: "Gmail",
-        C: "MS Excel",
-        D: "Paint"
-      },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "Which network topology has the highest fault tolerance?",
+    options: {
+      A: "Star",
+      B: "Bus",
+      C: "Ring",
+      D: "Mesh"
     },
-    {
-      question: "What is the main page of a website called?",
-      options: {
-        A: "Main Page",
-        B: "Homepage",
-        C: "Start Page",
-        D: "Intro Page"
-      },
-      correct: "B"
+    correct: "D"
+  },
+  {
+    question: "What is polymorphism in object-oriented programming?",
+    options: {
+      A: "Multiple inheritance",
+      B: "Method overloading and overriding",
+      C: "Data hiding",
+      D: "Code reusability"
     },
-    {
-      question: "Which of the following is a Microsoft product?",
-      options: {
-        A: "Safari",
-        B: "Chrome",
-        C: "Edge",
-        D: "Firefox"
-      },
-      correct: "C"
+    correct: "B"
+  },
+  {
+    question: "Which data structure is used in breadth-first search?",
+    options: {
+      A: "Stack",
+      B: "Queue",
+      C: "Priority Queue",
+      D: "Deque"
     },
-    {
-      question: "What does ISP stand for?",
-      options: {
-        A: "Internet Source Provider",
-        B: "Internet Service Provider",
-        C: "Internal System Provider",
-        D: "International Service Provider"
-      },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "What is the main advantage of B+ trees over B trees?",
+    options: {
+      A: "Lower height",
+      B: "Better range queries",
+      C: "Less memory usage",
+      D: "Faster insertions"
     },
-    {
-      question: "Which device connects computers in a network?",
-      options: {
-        A: "Monitor",
-        B: "Mouse",
-        C: "Router",
-        D: "Speaker"
-      },
-      correct: "C"
+    correct: "B"
+  },
+  {
+    question: "Which memory management technique eliminates internal fragmentation?",
+    options: {
+      A: "Fixed Partitioning",
+      B: "Dynamic Partitioning", 
+      C: "Both paging and segmentation",
+      D: "Paging only"
     },
-    {
-      question: "Which company makes the iPhone?",
-      options: {
-        A: "Samsung",
-        B: "Apple",
-        C: "Google",
-        D: "Huawei"
-      },
-      correct: "B"
+    correct: "D"
+  },
+  {
+    question: "What is the maximum flow problem in graph theory?",
+    options: {
+      A: "Finding shortest path",
+      B: "Finding minimum spanning tree",
+      C: "Finding maximum flow from source to sink",
+      D: "Finding strongly connected components"
     },
-    {
-      question: "Which key is used to delete?",
-      options: {
-        A: "Esc",
-        B: "Del",
-        C: "Ctrl",
-        D: "Alt"
-      },
-      correct: "B"
-    }
-  ],
+    correct: "C"
+  },
+  {
+    question: "Which SQL command is used to remove duplicates?",
+    options: {
+      A: "UNIQUE",
+      B: "DISTINCT",
+      C: "REMOVE",
+      D: "DELETE"
+    },
+    correct: "B"
+  },
+  {
+    question: "What is the space complexity of recursive Fibonacci algorithm?",
+    options: {
+      A: "O(1)",
+      B: "O(n)",
+      C: "O(log n)",
+      D: "O(2^n)"
+    },
+    correct: "B"
+  }
+],
 
   // ENGLISH SUBJECT MCQs (50 Questions)
   // Add your English language MCQs here
   english: [
-
-    {
-      question: "Choose the correct synonym for 'Happy':",
-      options: {
-        A: "Sad",
-        B: "Joyful",
-        C: "Angry",
-        D: "Tired"
-      },
-      correct: "B"
+  {
+    question: "Which literary device is used in 'The wind whispered through the trees'?",
+    options: {
+      A: "Metaphor",
+      B: "Personification",
+      C: "Alliteration",
+      D: "Hyperbole"
     },
-    {
-      question: "Choose the correct spelling:",
-      options: {
-        A: "Enviroment",
-        B: "Environment",
-        C: "Environmant",
-        D: "Envioronment"
-      },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "What is the correct meaning of the word 'ubiquitous'?",
+    options: {
+      A: "Rare and precious",
+      B: "Present everywhere",
+      C: "Ancient and outdated",
+      D: "Mysterious and unknown"
     },
-    {
-      question: "Synonym of 'Happy':",
-      options: {
-        A: "Sad",
-        B: "Angry",
-        C: "Joyful",
-        D: "Tired"
-      },
-      correct: "C"
+    correct: "B"
+  },
+  {
+    question: "Which sentence uses the subjunctive mood correctly?",
+    options: {
+      A: "If I was rich, I would travel",
+      B: "If I were rich, I would travel",
+      C: "If I am rich, I would travel",
+      D: "If I will be rich, I would travel"
     },
-    {
-      question: "Antonym of 'Cold':",
-      options: {
-        A: "Chilly",
-        B: "Hot",
-        C: "Cool",
-        D: "Freezing"
-      },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "What type of poem has 14 lines and follows a specific rhyme scheme?",
+    options: {
+      A: "Haiku",
+      B: "Limerick",
+      C: "Sonnet",
+      D: "Ballad"
     },
-    {
-      question: "Plural of 'Child' is:",
-      options: {
-        A: "Childs",
-        B: "Childes",
-        C: "Children",
-        D: "Childer"
-      },
-      correct: "C"
+    correct: "C"
+  },
+  {
+    question: "Which word is spelled correctly?",
+    options: {
+      A: "Occassionally",
+      B: "Ocassionally", 
+      C: "Occasionally",
+      D: "Occasionaly"
     },
-    {
-      question: "Choose the correct sentence:",
-      options: {
-        A: "He go to school",
-        B: "He goes to school",
-        C: "He going to school",
-        D: "He gone to school"
-      },
-      correct: "B"
+    correct: "C"
+  },
+  {
+    question: "What is an oxymoron?",
+    options: {
+      A: "A comparison using 'like' or 'as'",
+      B: "A contradiction in terms",
+      C: "Repetition of consonant sounds",
+      D: "An exaggerated statement"
     },
-    {
-      question: "Which is a verb?",
-      options: {
-        A: "Run",
-        B: "Quickly",
-        C: "Beautiful",
-        D: "Happiness"
-      },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "Which sentence demonstrates proper parallel structure?",
+    options: {
+      A: "She likes reading, writing, and to paint",
+      B: "She likes reading, writing, and painting",
+      C: "She likes to read, writing, and painting",
+      D: "She likes reading, to write, and painting"
     },
-    {
-      question: "Fill in the blank: She ___ a book.",
-      options: {
-        A: "read",
-        B: "reads",
-        C: "reading",
-        D: "is read"
-      },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "What is the plural form of 'datum'?",
+    options: {
+      A: "Datums",
+      B: "Data",
+      C: "Datas",
+      D: "Datumses"
     },
-    {
-      question: "Choose the correct article: ___ apple",
-      options: {
-        A: "A",
-        B: "An",
-        C: "The",
-        D: "None"
-      },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "Which literary term refers to a recurring theme or idea in literature?",
+    options: {
+      A: "Motif",
+      B: "Allegory",
+      C: "Symbolism",
+      D: "Irony"
     },
-    {
-      question: "Identify the noun in this sentence: The dog barked loudly.",
-      options: {
-        A: "dog",
-        B: "barked",
-        C: "loudly",
-        D: "the"
-      },
-      correct: "A"
+    correct: "A"
+  },
+  {
+    question: "What is the correct pronunciation guide for 'epitome'?",
+    options: {
+      A: "EP-i-tome",
+      B: "ep-i-TOME-ee",
+      C: "EP-i-to-me",
+      D: "e-PIT-o-me"
     },
-    {
-      question: "Which is a preposition?",
-      options: {
-        A: "Under",
-        B: "Happy",
-        C: "Run",
-        D: "Blue"
-      },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "Which sentence uses 'whom' correctly?",
+    options: {
+      A: "Who did you give the book to?",
+      B: "Whom did you give the book to?",
+      C: "Who should I address this letter to?",
+      D: "Whom is calling?"
     },
-    {
-      question: "Opposite of 'Easy':",
-      options: {
-        A: "Hard",
-        B: "Soft",
-        C: "Quick",
-        D: "Late"
-      },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "What is a gerund?",
+    options: {
+      A: "A verb ending in -ed",
+      B: "A verb form ending in -ing used as a noun",
+      C: "An adjective describing a verb",
+      D: "A linking verb"
     },
-    {
-      question: "Which is a question word?",
-      options: {
-        A: "Who",
-        B: "Dog",
-        C: "Fast",
-        D: "House"
-      },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "Which word means 'showing great attention to detail'?",
+    options: {
+      A: "Meticulous",
+      B: "Magnanimous", 
+      C: "Melancholy",
+      D: "Malevolent"
     },
-    {
-      question: "Past form of 'Go' is:",
-      options: {
-        A: "Goes",
-        B: "Went",
-        C: "Gone",
-        D: "Going"
-      },
-      correct: "B"
+    correct: "A"
+  },
+  {
+    question: "What is the antonym of 'ephemeral'?",
+    options: {
+      A: "Temporary",
+      B: "Permanent",
+      C: "Brief",
+      D: "Fleeting"
     },
-    {
-      question: "Adjective in this sentence: She wore a beautiful dress.",
-      options: {
-        A: "beautiful",
-        B: "wore",
-        C: "dress",
-        D: "she"
-      },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "Which punctuation mark should be used before a list introduced by 'the following'?",
+    options: {
+      A: "Semicolon",
+      B: "Comma",
+      C: "Colon",
+      D: "Period"
     },
-    {
-      question: "Which is an interjection?",
-      options: {
-        A: "Wow!",
-        B: "Run",
-        C: "Blue",
-        D: "Softly"
-      },
-      correct: "A"
+    correct: "C"
+  },
+  {
+    question: "What is the correct past participle of 'lie' (to recline)?",
+    options: {
+      A: "Lied",
+      B: "Laid",
+      C: "Lain",
+      D: "Lay"
     },
-    {
-      question: "Which is a compound word?",
-      options: {
-        A: "Sunlight",
-        B: "Very",
-        C: "About",
-        D: "More"
-      },
-      correct: "A"
+    correct: "C"
+  },
+  {
+    question: "Which literary device involves giving human characteristics to non-human things?",
+    options: {
+      A: "Anthropomorphism",
+      B: "Personification",
+      C: "Both A and B",
+      D: "Neither A nor B"
     },
-    {
-      question: "Choose the correct tense: I have eaten lunch.",
-      options: {
-        A: "Past Perfect",
-        B: "Present Perfect",
-        C: "Present Continuous",
-        D: "Past Simple"
-      },
-      correct: "B"
+    correct: "C"
+  },
+  {
+    question: "What does the prefix 'mal-' mean?",
+    options: {
+      A: "Good",
+      B: "Bad",
+      C: "Many",
+      D: "Small"
     },
-    {
-      question: "What is the synonym of 'Big'?",
-      options: {
-        A: "Huge",
-        B: "Tiny",
-        C: "Small",
-        D: "Short"
-      },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "Which sentence uses the apostrophe correctly?",
+    options: {
+      A: "The dog's are barking loudly",
+      B: "Its a beautiful day today",
+      C: "The children's toys are scattered",
+      D: "We sell apple's and orange's"
     },
-    {
-      question: "What is the opposite of 'Strong'?",
-      options: {
-        A: "Weak",
-        B: "Powerful",
-        C: "Heavy",
-        D: "Tall"
-      },
-      correct: "A"
+    correct: "C"
+  },
+  {
+    question: "What is the meaning of 'sanguine'?",
+    options: {
+      A: "Pessimistic",
+      B: "Optimistic",
+      C: "Angry",
+      D: "Confused"
     },
-    {
-      question: "Which is a conjunction?",
-      options: {
-        A: "And",
-        B: "Run",
-        C: "Pretty",
-        D: "Dog"
-      },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "Which word is a homophone of 'right'?",
+    options: {
+      A: "Write",
+      B: "Wright",
+      C: "Rite",
+      D: "All of the above"
     },
-    {
-      question: "Choose the correct sentence:",
-      options: {
-        A: "He is play football",
-        B: "He playing football",
-        C: "He plays football",
-        D: "He play football"
-      },
-      correct: "C"
+    correct: "D"
+  },
+  {
+    question: "What is the comparative form of 'good'?",
+    options: {
+      A: "Gooder",
+      B: "More good",
+      C: "Better",
+      D: "Best"
     },
-    {
-      question: "Choose the correct spelling:",
-      options: {
-        A: "Febuary",
-        B: "February",
-        C: "Febraury",
-        D: "Februry"
-      },
-      correct: "B"
+    correct: "C"
+  },
+  {
+    question: "Which sentence contains a dangling modifier?",
+    options: {
+      A: "After studying all night, the test was easy",
+      B: "After studying all night, I found the test easy",
+      C: "The test was easy after studying all night",
+      D: "I found the test easy after studying all night"
     },
-    {
-      question: "Which is an adverb?",
-      options: {
-        A: "Quickly",
-        B: "Fast",
-        C: "Soft",
-        D: "Kind"
-      },
-      correct: "A"
+    correct: "A"
+  },
+  {
+    question: "What is the meaning of 'perfunctory'?",
+    options: {
+      A: "Done with great care",
+      B: "Done as a duty without enthusiasm",
+      C: "Done perfectly",
+      D: "Done repeatedly"
     },
-    {
-      question: "Complete the phrase: Once upon a ___",
-      options: {
-        A: "time",
-        B: "day",
-        C: "night",
-        D: "dream"
-      },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "Which is the correct spelling?",
+    options: {
+      A: "Accomodate",
+      B: "Acommodate",
+      C: "Accommodate",
+      D: "Acomodate"
     },
-    {
-      question: "Past form of 'Eat' is:",
-      options: {
-        A: "Ate",
-        B: "Eated",
-        C: "Eating",
-        D: "Eats"
-      },
-      correct: "A"
+    correct: "C"
+  },
+  {
+    question: "What is synecdoche?",
+    options: {
+      A: "A part representing the whole",
+      B: "An exaggerated statement",
+      C: "A direct comparison",
+      D: "Repetition of vowel sounds"
     },
-    {
-      question: "Which is a question tag?",
-      options: {
-        A: "Isn't it?",
-        B: "And also",
-        C: "Because",
-        D: "Therefore"
-      },
-      correct: "A"
+    correct: "A"
+  },
+  {
+    question: "Which sentence uses 'farther' correctly?",
+    options: {
+      A: "We need to discuss this farther",
+      B: "The library is farther down the street",
+      C: "Let's take this conversation farther",
+      D: "I can't go farther with this topic"
     },
-    {
-      question: "Which is a pronoun?",
-      options: {
-        A: "He",
-        B: "Happy",
-        C: "Tall",
-        D: "Softly"
-      },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "What is the correct meaning of 'enormity'?",
+    options: {
+      A: "Large size",
+      B: "Great wickedness",
+      C: "Great importance",
+      D: "Unusual appearance"
     },
-    {
-      question: "What is the plural of 'Mouse'?",
-      options: {
-        A: "Mouses",
-        B: "Mices",
-        C: "Mouse",
-        D: "Mice"
-      },
-      correct: "D"
+    correct: "B"
+  },
+  {
+    question: "Which word means 'existing in name only'?",
+    options: {
+      A: "Nominal",
+      B: "Notorious",
+      C: "Nefarious",
+      D: "Negligible"
     },
-    {
-      question: "Which one is a vowel?",
-      options: {
-        A: "B",
-        B: "C",
-        C: "E",
-        D: "D"
-      },
-      correct: "C"
+    correct: "A"
+  },
+  {
+    question: "What is the correct plural of 'criterion'?",
+    options: {
+      A: "Criterions",
+      B: "Criteria",
+      C: "Criterias",
+      D: "Criterion"
     },
-    {
-      question: "Choose the correct form: They ___ going to school.",
-      options: {
-        A: "is",
-        B: "are",
-        C: "was",
-        D: "am"
-      },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "Which sentence demonstrates correct subject-verb agreement?",
+    options: {
+      A: "Neither of the students were present",
+      B: "Either the teacher or the students is responsible",
+      C: "Each of the books are interesting",
+      D: "Neither of the students was present"
     },
-    {
-      question: "What is the antonym of 'Up'?",
-      options: {
-        A: "Down",
-        B: "Over",
-        C: "Out",
-        D: "Top"
-      },
-      correct: "A"
+    correct: "D"
+  },
+  {
+    question: "What is cacophony in literature?",
+    options: {
+      A: "Pleasant-sounding words",
+      B: "Harsh, discordant sounds",
+      C: "Rhyming pattern",
+      D: "Silent letters"
     },
-    {
-      question: "Which of the following is an adjective?",
-      options: {
-        A: "Fast",
-        B: "Faster",
-        C: "Quick",
-        D: "All"
-      },
-      correct: "C"
+    correct: "B"
+  },
+  {
+    question: "Which word means 'truthfulness and accuracy'?",
+    options: {
+      A: "Veracity",
+      B: "Vivacity",
+      C: "Velocity",
+      D: "Verbosity"
     },
-    {
-      question: "Fill in the blank: She has ___ friends.",
-      options: {
-        A: "much",
-        B: "many",
-        C: "very",
-        D: "some"
-      },
-      correct: "B"
+    correct: "A"
+  },
+  {
+    question: "What is the past tense of 'lead' (to guide)?",
+    options: {
+      A: "Lead",
+      B: "Led",
+      C: "Leaded",
+      D: "Leader"
     },
-    {
-      question: "Which of these is a verb?",
-      options: {
-        A: "Jump",
-        B: "Tall",
-        C: "Quick",
-        D: "Soft"
-      },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "Which literary device is used in 'The classroom was a zoo'?",
+    options: {
+      A: "Simile",
+      B: "Metaphor",
+      C: "Personification",
+      D: "Hyperbole"
     },
-    {
-      question: "Choose the correct sentence:",
-      options: {
-        A: "He don't like tea",
-        B: "He doesn't likes tea",
-        C: "He doesn't like tea",
-        D: "He not like tea"
-      },
-      correct: "C"
+    correct: "B"
+  },
+  {
+    question: "What does 'etymology' study?",
+    options: {
+      A: "Insect behavior",
+      B: "Word origins",
+      C: "Plant classification",
+      D: "Rock formations"
     },
-    {
-      question: "What is the plural of 'Box'?",
-      options: {
-        A: "Boxs",
-        B: "Boxes",
-        C: "Boxen",
-        D: "Boxies"
-      },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "Which sentence uses 'affect' correctly?",
+    options: {
+      A: "The rain will have no affect on our plans",
+      B: "What affect will this have?",
+      C: "The rain will affect our plans",
+      D: "I hope this won't affect badly"
     },
-    {
-      question: "What is the synonym of 'Fast'?",
-      options: {
-        A: "Slow",
-        B: "Quick",
-        C: "Hard",
-        D: "Late"
-      },
-      correct: "B"
+    correct: "C"
+  },
+  {
+    question: "What is the meaning of 'panacea'?",
+    options: {
+      A: "A minor problem",
+      B: "A cure-all remedy",
+      C: "A type of disease",
+      D: "A medical specialist"
     },
-    {
-      question: "Antonym of 'Laugh':",
-      options: {
-        A: "Cry",
-        B: "Smile",
-        C: "Talk",
-        D: "Shout"
-      },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "Which is the correct superlative form of 'bad'?",
+    options: {
+      A: "Baddest",
+      B: "More bad",
+      C: "Most bad",
+      D: "Worst"
     },
-    {
-      question: "Choose the correct form: I ___ born in 2000.",
-      options: {
-        A: "am",
-        B: "was",
-        C: "were",
-        D: "is"
-      },
-      correct: "B"
+    correct: "D"
+  },
+  {
+    question: "What is a malapropism?",
+    options: {
+      A: "Misuse of a word for a similar-sounding word",
+      B: "Use of archaic language",
+      C: "Repetition of phrases",
+      D: "Incorrect grammar"
     },
-    {
-      question: "Which of these is a helping verb?",
-      options: {
-        A: "Is",
-        B: "Tree",
-        C: "Big",
-        D: "Jump"
-      },
-      correct: "A"
+    correct: "A"
+  },
+  {
+    question: "Which punctuation is correct for this sentence: 'I have three favorite colors ___ red, blue, and green'?",
+    options: {
+      A: "Semicolon (;)",
+      B: "Comma (,)",
+      C: "Colon (:)",
+      D: "Dash (—)"
     },
-    {
-      question: "Which one is a countable noun?",
-      options: {
-        A: "Sugar",
-        B: "Water",
-        C: "Book",
-        D: "Rice"
-      },
-      correct: "C"
+    correct: "C"
+  },
+  {
+    question: "What does 'acquiesce' mean?",
+    options: {
+      A: "To refuse firmly",
+      B: "To accept reluctantly",
+      C: "To argue passionately",
+      D: "To ignore completely"
     },
-    {
-      question: "Choose the correct option: He is ___ honest man.",
-      options: {
-        A: "a",
-        B: "an",
-        C: "the",
-        D: "no article"
-      },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "Which word is misspelled?",
+    options: {
+      A: "Necessary",
+      B: "Separate",
+      C: "Priviledge",
+      D: "Definitely"
     },
-    {
-      question: "Which is a collective noun?",
-      options: {
-        A: "Army",
-        B: "Chair",
-        C: "Star",
-        D: "Man"
-      },
-      correct: "A"
+    correct: "C"
+  },
+  {
+    question: "What is the difference between 'imply' and 'infer'?",
+    options: {
+      A: "They mean the same thing",
+      B: "Imply is to suggest, infer is to deduce",
+      C: "Infer is to suggest, imply is to deduce",
+      D: "Only one is a real word"
     },
-    {
-      question: "Choose the correct spelling:",
-      options: {
-        A: "Recieve",
-        B: "Receive",
-        C: "Receeve",
-        D: "Receave"
-      },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "Which sentence uses parallel structure correctly?",
+    options: {
+      A: "The job requires typing, filing, and to answer phones",
+      B: "The job requires typing, filing, and answering phones",
+      C: "The job requires to type, filing, and answering phones",
+      D: "The job requires typing, to file, and phone answering"
     },
-    {
-      question: "Identify the adjective: The tall boy won the race.",
-      options: {
-        A: "tall",
-        B: "boy",
-        C: "won",
-        D: "race"
-      },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "What is the meaning of 'perspicacious'?",
+    options: {
+      A: "Sweating profusely",
+      B: "Having keen insight",
+      C: "Being stubborn",
+      D: "Acting nervously"
     },
-    {
-      question: "Which of the following is an interrogative sentence?",
-      options: {
-        A: "He goes to school.",
-        B: "Do you like ice cream?",
-        C: "He eats rice.",
-        D: "She is dancing."
-      },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "Which sentence contains a split infinitive?",
+    options: {
+      A: "She decided to quickly run",
+      B: "She decided to run quickly",
+      C: "She quickly decided to run",
+      D: "Quickly, she decided to run"
     },
-    {
-      question: "What is the correct order of the sentence: 'to / I / like / read / books'",
-      options: {
-        A: "I like to read books",
-        B: "To I like read books",
-        C: "Like I books to read",
-        D: "Books like I to read"
-      },
-      correct: "A"
+    correct: "A"
+  },
+  {
+    question: "What is the collective noun for a group of geese on water?",
+    options: {
+      A: "Flock",
+      B: "Gaggle",
+      C: "Skein",
+      D: "Both B and C are correct"
     },
-    {
-      question: "Which is the correct question tag: She is a teacher,",
-      options: {
-        A: "is she?",
-        B: "isn't she?",
-        C: "was she?",
-        D: "has she?"
-      },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "Which word means 'characterized by joking and good humor'?",
+    options: {
+      A: "Jocular",
+      B: "Judicial",
+      C: "Juvenile",
+      D: "Jaunty"
     },
-    {
-      question: "What is the correct comparative of 'Good'?",
-      options: {
-        A: "Gooder",
-        B: "Better",
-        C: "Best",
-        D: "Most good"
-      },
-      correct: "B"
-    }
-  ],
+    correct: "A"
+  },
+  {
+    question: "What is the correct way to show possession for a plural noun ending in 's'?",
+    options: {
+      A: "Add 's",
+      B: "Add s'",
+      C: "Add only an apostrophe",
+      D: "Don't add anything"
+    },
+    correct: "C"
+  }
+],
 
   // GENERAL KNOWLEDGE MCQs (50 Questions)
   // Add your general knowledge MCQs here
@@ -1565,265 +1573,508 @@ const mcqsData = {
 
   // IQ TEST MCQs (50 Questions)
   // Add your IQ test MCQs here
-  iq: [
-
-    {
-      question: "What comes next in the sequence: 2, 4, 8, 16, ?",
-      options: {
-        A: "24",
-        B: "32",
-        C: "28",
-        D: "20"
-      },
-      correct: "B"
+  iq:[
+  {
+    question: "What comes next in the sequence: 2, 6, 12, 20, 30, ?",
+    options: {
+      A: "40",
+      B: "42",
+      C: "44",
+      D: "46"
     },
-    {
-      question: "What comes next in the series: 2, 4, 8, 16, ?",
-      options: { A: "18", B: "24", C: "32", D: "20" },
-      correct: "C"
+    correct: "B"
+  },
+  {
+    question: "If all Bloops are Razzles and all Razzles are Lazzles, then:",
+    options: {
+      A: "All Bloops are Lazzles",
+      B: "All Lazzles are Bloops",
+      C: "Some Lazzles are Bloops",
+      D: "No Bloops are Lazzles"
     },
-    {
-      question: "If 5 + 3 = 28, 4 + 2 = 16, then 3 + 1 = ?",
-      options: { A: "8", B: "6", C: "12", D: "4" },
-      correct: "A"
+    correct: "A"
+  },
+  {
+    question: "What number should replace the question mark: 144, 121, 100, 81, 64, ?",
+    options: {
+      A: "45",
+      B: "49",
+      C: "36",
+      D: "25"
     },
-    {
-      question: "Which is the odd one out: Apple, Banana, Carrot, Mango?",
-      options: { A: "Apple", B: "Banana", C: "Carrot", D: "Mango" },
-      correct: "C"
+    correct: "B"
+  },
+  {
+    question: "Which word does NOT belong: TRIANGLE, SQUARE, PENTAGON, CIRCLE, HEXAGON",
+    options: {
+      A: "Triangle",
+      B: "Square", 
+      C: "Circle",
+      D: "Pentagon"
     },
-    {
-      question: "What is the mirror image of 'b'?",
-      options: { A: "d", B: "q", C: "p", D: "none" },
-      correct: "A"
+    correct: "C"
+  },
+  {
+    question: "If it takes 5 machines 5 minutes to make 5 widgets, how long does it take 100 machines to make 100 widgets?",
+    options: {
+      A: "100 minutes",
+      B: "20 minutes",
+      C: "5 minutes",
+      D: "1 minute"
     },
-    {
-      question: "If CAT = 24, BAT = ?",
-      options: { A: "23", B: "25", C: "22", D: "24" },
-      correct: "A"
+    correct: "C"
+  },
+  {
+    question: "What comes next: Z, Y, X, W, V, U, ?",
+    options: {
+      A: "T",
+      B: "S",
+      C: "R",
+      D: "Q"
     },
-    {
-      question: "Which number is missing: 1, 4, 9, 16, ?, 36",
-      options: { A: "20", B: "25", C: "30", D: "28" },
-      correct: "B"
+    correct: "A"
+  },
+  {
+    question: "Complete the analogy: Book is to Reading as Fork is to:",
+    options: {
+      A: "Eating",
+      B: "Kitchen",
+      C: "Cooking",
+      D: "Food"
     },
-    {
-      question: "Which is the odd number: 2, 4, 6, 9, 8",
-      options: { A: "4", B: "6", C: "9", D: "8" },
-      correct: "C"
+    correct: "A"
+  },
+  {
+    question: "What number comes next: 1, 4, 9, 16, 25, 36, ?",
+    options: {
+      A: "47",
+      B: "48",
+      C: "49",
+      D: "50"
     },
-    {
-      question: "If A = 1, B = 2, ... Z = 26, then SUM = ?",
-      options: { A: "58", B: "60", C: "52", D: "54" },
-      correct: "A"
+    correct: "C"
+  },
+  {
+    question: "If you rearrange the letters 'CIFAIPC' you get the name of a:",
+    options: {
+      A: "Country",
+      B: "Animal",
+      C: "Ocean",
+      D: "City"
     },
-    {
-      question: "Complete the series: 5, 10, 20, 40, ?",
-      options: { A: "50", B: "60", C: "80", D: "100" },
-      correct: "C"
+    correct: "C"
+  },
+  {
+    question: "What comes next in the pattern: 3, 7, 15, 31, 63, ?",
+    options: {
+      A: "127",
+      B: "125",
+      C: "124",
+      D: "126"
     },
-    {
-      question: "Which shape has 4 equal sides?",
-      options: { A: "Circle", B: "Triangle", C: "Square", D: "Rectangle" },
-      correct: "C"
+    correct: "A"
+  },
+  {
+    question: "Which number is the odd one out: 16, 25, 36, 49, 64, 81",
+    options: {
+      A: "16",
+      B: "25",
+      C: "36",
+      D: "None - all are perfect squares"
     },
-    {
-      question: "Find the odd one: Pen, Pencil, Eraser, Book",
-      options: { A: "Pen", B: "Pencil", C: "Eraser", D: "Book" },
-      correct: "D"
+    correct: "D"
+  },
+  {
+    question: "Complete: CAT is to KITTEN as DOG is to:",
+    options: {
+      A: "BARK",
+      B: "PUPPY",
+      C: "BONE",
+      D: "TAIL"
     },
-    {
-      question: "How many sides does a hexagon have?",
-      options: { A: "5", B: "6", C: "7", D: "8" },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "What is the next number: 2, 5, 11, 23, 47, ?",
+    options: {
+      A: "94",
+      B: "95",
+      C: "96",
+      D: "97"
     },
-    {
-      question: "If 2 + 3 = 10, 3 + 4 = 21, then 4 + 5 = ?",
-      options: { A: "36", B: "28", C: "29", D: "27" },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "If RED = 18, BLUE = 21, then GREEN = ?",
+    options: {
+      A: "25",
+      B: "27",
+      C: "29",
+      D: "31"
     },
-    {
-      question: "Which number is next: 3, 6, 11, 18, ?",
-      options: { A: "25", B: "26", C: "27", D: "28" },
-      correct: "C"
+    correct: "C"
+  },
+  {
+    question: "Which shape comes next in the sequence if the pattern is: Circle, Square, Triangle, Circle, Square, ?",
+    options: {
+      A: "Circle",
+      B: "Square",
+      C: "Triangle",
+      D: "Pentagon"
     },
-    {
-      question: "Which one is different: Cow, Goat, Dog, Chair",
-      options: { A: "Cow", B: "Dog", C: "Chair", D: "Goat" },
-      correct: "C"
+    correct: "C"
+  },
+  {
+    question: "A man lives on the 20th floor. Every morning he takes the elevator down to ground floor. When he comes back, he takes the elevator to the 10th floor and walks the rest, except on rainy days. Why?",
+    options: {
+      A: "He likes exercise",
+      B: "The elevator is broken above 10th floor",
+      C: "He's too short to reach the 20th floor button without umbrella",
+      D: "He meets friends on 10th floor"
     },
-    {
-      question: "Which number completes: 121, 144, ?, 196",
-      options: { A: "155", B: "164", C: "169", D: "176" },
-      correct: "C"
+    correct: "C"
+  },
+  {
+    question: "What comes next: 1, 1, 2, 3, 5, 8, 13, ?",
+    options: {
+      A: "19",
+      B: "20",
+      C: "21",
+      D: "22"
     },
-    {
-      question: "Which one does not belong: Triangle, Square, Circle, Cube",
-      options: { A: "Triangle", B: "Square", C: "Circle", D: "Cube" },
-      correct: "D"
+    correct: "C"
+  },
+  {
+    question: "If MONDAY is coded as 123456, then DAMON is coded as:",
+    options: {
+      A: "45213",
+      B: "45123",
+      C: "54123",
+      D: "45231"
     },
-    {
-      question: "What comes next: A, C, E, G, ?",
-      options: { A: "H", B: "I", C: "J", D: "K" },
-      correct: "B"
+    correct: "A"
+  },
+  {
+    question: "Complete the series: AZ, BY, CX, DW, ?",
+    options: {
+      A: "EV",
+      B: "FU",
+      C: "GT",
+      D: "EW"
     },
-    {
-      question: "Which number comes next: 1, 1, 2, 3, 5, 8, ?",
-      options: { A: "12", B: "13", C: "14", D: "15" },
-      correct: "B"
+    correct: "A"
+  },
+  {
+    question: "What is the missing number: 8, 27, 64, 125, ?",
+    options: {
+      A: "196",
+      B: "216",
+      C: "225",
+      D: "256"
     },
-    {
-      question: "Find the missing letter: J, L, N, P, ?",
-      options: { A: "Q", B: "R", C: "S", D: "T" },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "Which word can be made from the letters of INTEGRAL?",
+    options: {
+      A: "TRIANGLE",
+      B: "RELATING",
+      C: "ALERTING",
+      D: "All of the above"
     },
-    {
-      question: "Find the odd one out: Red, Green, Yellow, Dog",
-      options: { A: "Red", B: "Green", C: "Yellow", D: "Dog" },
-      correct: "D"
+    correct: "D"
+  },
+  {
+    question: "What number should replace ?: 7, 14, 28, 35, 70, ?",
+    options: {
+      A: "105",
+      B: "140",
+      C: "175",
+      D: "210"
     },
-    {
-      question: "What is next in: 100, 90, 80, 70, ?",
-      options: { A: "50", B: "60", C: "65", D: "75" },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "If 2 + 3 = 10, 6 + 5 = 66, 1 + 4 = 5, then 3 + 7 = ?",
+    options: {
+      A: "70",
+      B: "21",
+      C: "30",
+      D: "10"
     },
-    {
-      question: "What is the next number: 2, 3, 5, 7, 11, ?",
-      options: { A: "13", B: "14", C: "15", D: "16" },
-      correct: "A"
+    correct: "C"
+  },
+  {
+    question: "What comes next: O, T, T, F, F, S, S, E, ?",
+    options: {
+      A: "N",
+      B: "T",
+      C: "E",
+      D: "I"
     },
-    {
-      question: "How many hours in 3 days?",
-      options: { A: "48", B: "60", C: "72", D: "90" },
-      correct: "C"
+    correct: "A"
+  },
+  {
+    question: "Which number doesn't belong: 4, 6, 8, 9, 10, 12, 14, 15",
+    options: {
+      A: "9",
+      B: "15",
+      C: "Both A and B",
+      D: "None"
     },
-    {
-      question: "If MONDAY = 1, TUESDAY = 2, ..., then SUNDAY = ?",
-      options: { A: "5", B: "6", C: "7", D: "1" },
-      correct: "C"
+    correct: "C"
+  },
+  {
+    question: "Complete: BIRD is to SKY as FISH is to:",
+    options: {
+      A: "SCALE",
+      B: "WATER",
+      C: "SWIM",
+      D: "OCEAN"
     },
-    {
-      question: "Which one is a square number?",
-      options: { A: "6", B: "8", C: "9", D: "10" },
-      correct: "C"
+    correct: "B"
+  },
+  {
+    question: "What is the next term: 1, 8, 27, 64, 125, ?",
+    options: {
+      A: "196",
+      B: "216",
+      C: "243",
+      D: "256"
     },
-    {
-      question: "Which of these is not a fruit?",
-      options: { A: "Mango", B: "Orange", C: "Carrot", D: "Apple" },
-      correct: "C"
+    correct: "B"
+  },
+  {
+    question: "If you have a 3-gallon jug and a 5-gallon jug, how can you measure exactly 4 gallons?",
+    options: {
+      A: "Fill 5-gallon, pour into 3-gallon, empty 3-gallon, pour remaining 2 gallons, fill 5-gallon again, pour into 3-gallon until full",
+      B: "Fill both jugs completely",
+      C: "Use only the 5-gallon jug",
+      D: "It's impossible"
     },
-    {
-      question: "What is the missing number: 64, 32, 16, ?, 4",
-      options: { A: "12", B: "10", C: "8", D: "6" },
-      correct: "C"
+    correct: "A"
+  },
+  {
+    question: "What comes next: 100, 96, 88, 72, 40, ?",
+    options: {
+      A: "8",
+      B: "24",
+      C: "-24",
+      D: "0"
     },
-    {
-      question: "What comes next: Z, X, V, T, ?",
-      options: { A: "R", B: "S", C: "U", D: "Q" },
-      correct: "A"
+    correct: "C"
+  },
+  {
+    question: "Complete the analogy: COLD is to HOT as NIGHT is to:",
+    options: {
+      A: "DARK",
+      B: "MOON",
+      C: "DAY",
+      D: "SLEEP"
     },
-    {
-      question: "How many months have 31 days?",
-      options: { A: "5", B: "6", C: "7", D: "8" },
-      correct: "C"
+    correct: "C"
+  },
+  {
+    question: "What is the missing number in: 2, 6, 18, 54, ?",
+    options: {
+      A: "108",
+      B: "162",
+      C: "216",
+      D: "324"
     },
-    {
-      question: "If 3 = 18, 4 = 32, then 5 = ?",
-      options: { A: "40", B: "45", C: "50", D: "60" },
-      correct: "C"
+    correct: "B"
+  },
+  {
+    question: "Which letter comes next: B, D, F, H, J, ?",
+    options: {
+      A: "K",
+      B: "L",
+      C: "M",
+      D: "N"
     },
-    {
-      question: "What comes next: 0, 1, 1, 2, 3, 5, ?",
-      options: { A: "7", B: "8", C: "9", D: "10" },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "If EARTH has 5 letters, MARS has 4 letters, how many letters does JUPITER have?",
+    options: {
+      A: "6",
+      B: "7",
+      C: "8",
+      D: "9"
     },
-    {
-      question: "Which one is different: Fish, Cow, Goat, Hen",
-      options: { A: "Cow", B: "Hen", C: "Fish", D: "Goat" },
-      correct: "C"
+    correct: "B"
+  },
+  {
+    question: "What number continues the sequence: 11, 13, 17, 19, 23, ?",
+    options: {
+      A: "27",
+      B: "29",
+      C: "31",
+      D: "33"
     },
-    {
-      question: "Which letter comes next: D, G, J, M, ?",
-      options: { A: "N", B: "P", C: "Q", D: "R" },
-      correct: "B"
+    correct: "B"
+  },
+  {
+    question: "Complete: FINGER is to HAND as LEAF is to:",
+    options: {
+      A: "GREEN",
+      B: "TREE",
+      C: "BRANCH",
+      D: "FOREST"
     },
-    {
-      question: "If WHITE = 23, BLACK = ?",
-      options: { A: "28", B: "29", C: "30", D: "31" },
-      correct: "B"
+    correct: "C"
+  },
+  {
+    question: "What is the next number: 3, 6, 11, 18, 27, ?",
+    options: {
+      A: "36",
+      B: "38",
+      C: "40",
+      D: "42"
     },
-    {
-      question: "Which figure is symmetrical?",
-      options: { A: "Circle", B: "Triangle", C: "Square", D: "All" },
-      correct: "D"
+    correct: "B"
+  },
+  {
+    question: "If all roses are flowers, and some flowers are red, then:",
+    options: {
+      A: "All roses are red",
+      B: "Some roses are red",
+      C: "Some roses might be red",
+      D: "No roses are red"
     },
-    {
-      question: "How many minutes in 2.5 hours?",
-      options: { A: "120", B: "125", C: "150", D: "180" },
-      correct: "C"
+    correct: "C"
+  },
+  {
+    question: "What comes next: 1, 4, 2, 8, 3, 12, 4, ?",
+    options: {
+      A: "16",
+      B: "5",
+      C: "20",
+      D: "8"
     },
-    {
-      question: "Which is heavier: 1kg iron or 1kg cotton?",
-      options: { A: "Iron", B: "Cotton", C: "Equal", D: "None" },
-      correct: "C"
+    correct: "A"
+  },
+  {
+    question: "Which word is the odd one out: OCEAN, RIVER, LAKE, MOUNTAIN, POND",
+    options: {
+      A: "Ocean",
+      B: "River",
+      C: "Mountain",
+      D: "Pond"
     },
-    {
-      question: "If 6 × 2 = 12, 6 + 2 = ?",
-      options: { A: "7", B: "8", C: "9", D: "10" },
-      correct: "B"
+    correct: "C"
+  },
+  {
+    question: "What replaces the ?: 5, 10, 9, 18, 17, 34, 33, ?",
+    options: {
+      A: "32",
+      B: "66",
+      C: "68",
+      D: "34"
     },
-    {
-      question: "If yesterday was Friday, what is today?",
-      options: { A: "Saturday", B: "Thursday", C: "Sunday", D: "Monday" },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "Complete: BOOK is to LIBRARY as TOOL is to:",
+    options: {
+      A: "HAMMER",
+      B: "WORKSHOP",
+      C: "BUILD",
+      D: "METAL"
     },
-    {
-      question: "Which letter comes after 'Q'?",
-      options: { A: "R", B: "S", C: "T", D: "P" },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "What number is missing: 7, 10, 16, 28, ?, 82",
+    options: {
+      A: "46",
+      B: "52",
+      C: "58",
+      D: "64"
     },
-    {
-      question: "Find the next in the pattern: A2, B4, C6, D8, ?",
-      options: { A: "E10", B: "E9", C: "F10", D: "F12" },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "If you fold a piece of paper in half 7 times, how many sections will you have?",
+    options: {
+      A: "64",
+      B: "128",
+      C: "256",
+      D: "512"
     },
-    {
-      question: "What comes next: 81, 64, 49, ?",
-      options: { A: "36", B: "30", C: "25", D: "20" },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "What comes next: M, V, E, M, J, S, U, ?",
+    options: {
+      A: "N",
+      B: "P",
+      C: "S",
+      D: "T"
     },
-    {
-      question: "If 10 + 10 = 100, then 5 + 5 = ?",
-      options: { A: "25", B: "50", C: "100", D: "10" },
-      correct: "A"
+    correct: "A"
+  },
+  {
+    question: "Complete the pattern: 2, 3, 5, 7, 11, 13, ?",
+    options: {
+      A: "15",
+      B: "17",
+      C: "19",
+      D: "21"
     },
-    {
-      question: "What comes next: 1, 2, 4, 7, 11, ?",
-      options: { A: "16", B: "17", C: "18", D: "15" },
-      correct: "A"
+    correct: "B"
+  },
+  {
+    question: "If FLOWER is coded as 123456, then LOWER is:",
+    options: {
+      A: "13456",
+      B: "23456",
+      C: "12456",
+      D: "13256"
     },
-    {
-      question: "Which number is odd: 10, 12, 13, 14",
-      options: { A: "10", B: "12", C: "13", D: "14" },
-      correct: "C"
+    correct: "A"
+  },
+  {
+    question: "What is the next number: 1, 2, 4, 7, 11, 16, ?",
+    options: {
+      A: "20",
+      B: "21",
+      C: "22",
+      D: "23"
     },
-    {
-      question: "How many vowels in the word 'INTELLIGENCE'?",
-      options: { A: "5", B: "4", C: "6", D: "7" },
-      correct: "A"
+    correct: "C"
+  },
+  {
+    question: "Which shape completes the pattern if: ○ △ □ ○ △ ?",
+    options: {
+      A: "○",
+      B: "△",
+      C: "□",
+      D: "◇"
     },
-    {
-      question: "Which shape has no corners?",
-      options: { A: "Square", B: "Triangle", C: "Circle", D: "Rectangle" },
-      correct: "C"
+    correct: "C"
+  },
+  {
+    question: "What comes next: 144, 121, 100, 81, 64, 49, ?",
+    options: {
+      A: "25",
+      B: "36",
+      C: "16",
+      D: "9"
     },
-    {
-      question: "If 8 + 2 = 20, 9 + 3 = ?",
-      options: { A: "24", B: "27", C: "25", D: "30" },
-      correct: "B"
-    }
-
-  ],
+    correct: "B"
+  },
+  {
+    question: "Complete: WATER is to ICE as LIQUID is to:",
+    options: {
+      A: "GAS",
+      B: "VAPOR", 
+      C: "SOLID",
+      D: "STEAM"
+    },
+    correct: "C"
+  }
+],
 
   // ISLAMIAT MCQs (50 Questions)
   // Add your Islamiat MCQs here
@@ -3230,4 +3481,5 @@ window.addEventListener('error', (e) => {
 // ============================================
 // END OF JAVASCRIPT CODE
 // ============================================
+
 
