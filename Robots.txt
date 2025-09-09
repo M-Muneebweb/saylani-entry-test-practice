@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://m-muneebweb.github.io/saylani-entry-test-practice/sitemap.xml
