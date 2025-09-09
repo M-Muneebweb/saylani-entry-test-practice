@@ -1,4 +1,5 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://m-muneebweb.github.io/saylani-entry-test-practice/sitemap.xml
+Sitemap: https://saylani-entry-test-practice.vercel.app/sitemap.xml
+
