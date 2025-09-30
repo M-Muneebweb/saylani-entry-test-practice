@@ -99,7 +99,7 @@ function formatSubjectName(subject) {
         'math': 'Mathematics',
         'iq': 'IQ',
         'computer': 'Computer',
-        'general_knowledge': 'General Knowledge'
+        'general': 'General Knowledge'
     };
     return names[subject] || subject;
 }
