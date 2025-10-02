@@ -1,90 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MCQs Test - Saylani Entry Test Practice</title>
+    <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
+    <title>MCQS - Saylani Entry Test Practice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
-        <div class="container nav-container">
-            <div class="logo">
-                <h1>Saylani Entry Test Practice</h1>
-            </div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="faqs.html">FAQs</a>
-                <a href="terms.html">Terms</a>
-                <a href="privacy.html">Privacy</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Saylani Entry Test</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <section class="mcq-section">
+    <!-- Quiz Container -->
+    <section class="quiz-section">
         <div class="container">
-            <div class="test-header">
-                <h2 id="subjectTitle">Test</h2>
-                <div class="progress-bar">
-                    <div class="progress-fill" id="progressBar"></div>
-                </div>
-                <p class="question-counter">Question <span id="currentQuestion">1</span> of <span id="totalQuestions">0</span></p>
-            </div>
-
-            <div class="mcq-container" id="mcqContainer">
-                <div class="question-card">
-                    <h3 id="questionText">Loading question...</h3>
-                    <div class="options-list" id="optionsList">
-                        <!-- Options will be loaded here -->
-                    </div>
-                    <div class="navigation-buttons">
-                        <button class="btn-nav btn-prev" id="prevBtn" onclick="previousQuestion()">Previous</button>
-                        <button class="btn-nav btn-next" id="nextBtn" onclick="nextQuestion()">Next</button>
+            <div class="quiz-container">
+                <!-- Quiz Header -->
+                <div class="quiz-header">
+                    <button class="back-btn" onclick="goBack()">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    <h2 class="quiz-subject" id="quizSubject">Loading...</h2>
+                    <div class="quiz-progress">
+                        <span id="currentQuestion">0</span> / <span id="totalQuestions">0</span>
                     </div>
                 </div>
-            </div>
 
-            <div class="result-container hidden" id="resultContainer">
-                <div class="result-card">
-                    <h2>Test Completed!</h2>
+                <!-- Progress Bar -->
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+
+                <!-- Quiz Content -->
+                <div class="quiz-content" id="quizContent">
+                    <div class="loading">
+                        <div class="loading-spinner"></div>
+                        <p>Loading questions...</p>
+                    </div>
+                </div>
+
+                <!-- Question Box -->
+                <div class="question-box" id="questionBox" style="display: none;">
+                    <h3 class="question-text" id="questionText"></h3>
+                    <div class="options-container" id="optionsContainer"></div>
+                    <button class="next-btn" id="nextBtn" onclick="nextQuestion()">
+                        Next Question <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Results Box -->
+                <div class="results-box" id="resultsBox" style="display: none;">
+                    <div class="results-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h2 class="results-title">Quiz Completed!</h2>
                     <div class="score-display">
                         <div class="score-circle">
-                            <span id="scorePercentage">0</span>%
+                            <svg width="200" height="200">
+                                <circle cx="100" cy="100" r="90" class="score-circle-bg"></circle>
+                                <circle cx="100" cy="100" r="90" class="score-circle-fill" id="scoreCircle"></circle>
+                            </svg>
+                            <div class="score-text">
+                                <span class="score-percentage" id="scorePercentage">0%</span>
+                                <span class="score-fraction" id="scoreFraction">0/0</span>
+                            </div>
                         </div>
-                        <div class="score-details">
-                            <p><strong>Correct:</strong> <span id="correctCount">0</span></p>
-                            <p><strong>Wrong:</strong> <span id="wrongCount">0</span></p>
-                            <p><strong>Total:</strong> <span id="totalCount">0</span></p>
+                    </div>
+                    <div class="results-stats">
+                        <div class="stat-item correct">
+                            <i class="fas fa-check-circle"></i>
+                            <span id="correctCount">0</span>
+                            <p>Correct</p>
+                        </div>
+                        <div class="stat-item incorrect">
+                            <i class="fas fa-times-circle"></i>
+                            <span id="incorrectCount">0</span>
+                            <p>Incorrect</p>
                         </div>
                     </div>
 
-                    <div class="answers-review" id="answersReview">
-                        <!-- Detailed answers will be shown here -->
+                    <!-- Detailed Results -->
+                    <div class="detailed-results">
+                        <h3>Review Your Answers</h3>
+                        <div id="detailedResultsContainer"></div>
                     </div>
 
-                    <div class="result-actions">
-                        <button class="btn-action" onclick="restartTest()">Retake Test</button>
-                        <button class="btn-action btn-home" onclick="goHome()">Go Home</button>
+                    <div class="results-actions">
+                        <button class="retry-btn" onclick="retryQuiz()">
+                            <i class="fas fa-redo"></i> Retry Quiz
+                        </button>
+                        <button class="home-btn" onclick="goToHome()">
+                            <i class="fas fa-home"></i> Go Home
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Saylani Entry Test Practice. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="about.html">About</a>
-                <a href="faqs.html">FAQs</a>
-                <a href="terms.html">Terms</a>
-                <a href="privacy.html">Privacy</a>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Saylani Mass IT Training. All rights reserved.</p>
             </div>
         </div>
     </footer>

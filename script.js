@@ -1,213 +1,197 @@
-// Global variables
+// ==================== Mobile Menu Toggle ====================
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+}
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (navLinks && !e.target.closest('.nav-wrapper')) {
+        navLinks.classList.remove('active');
+    }
+});
+
+// ==================== FAQ Accordion ====================
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    question.addEventListener('click', () => {
+        // Close other items
+        faqItems.forEach(otherItem => {
+            if (otherItem !== item) {
+                otherItem.classList.remove('active');
+            }
+        });
+        // Toggle current item
+        item.classList.toggle('active');
+    });
+});
+
+// ==================== Quiz Functionality ====================
 let currentSubject = '';
 let questions = [];
 let currentQuestionIndex = 0;
 let userAnswers = [];
 let score = 0;
 
-// Mobile menu toggle
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-
-    if (hamburger) {
-        hamburger.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        });
-    }
-
-    // Add animation on scroll
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
-            }
-        });
-    }, observerOptions);
-
-    const elementsToAnimate = document.querySelectorAll('.subject-card, .stat-box, .faq-item, .content-card');
-    elementsToAnimate.forEach(el => observer.observe(el));
-
-    // Initialize test if on mcqs page
-    if (window.location.pathname.includes('mcqs.html')) {
-        initializeTest();
-    }
-});
-
-// Start test function
+// Start Test Function (called from index.html)
 function startTest(subject) {
-    currentSubject = subject;
-    localStorage.setItem('currentSubject', subject);
+    localStorage.setItem('selectedSubject', subject);
     window.location.href = 'mcqs.html';
 }
 
-// Initialize test
-async function initializeTest() {
-    const subject = localStorage.getItem('currentSubject');
-    if (!subject) {
-        window.location.href = 'index.html';
-        return;
-    }
+// Go Back Function
+function goBack() {
+    window.location.href = 'index.html';
+}
 
-    currentSubject = subject;
+// Go to Home Function
+function goToHome() {
+    window.location.href = 'index.html';
+}
 
-    // Update subject title
-    const subjectTitle = document.getElementById('subjectTitle');
-    if (subjectTitle) {
-        subjectTitle.textContent = formatSubjectName(subject) + ' Test';
-    }
+// Retry Quiz Function
+function retryQuiz() {
+    currentQuestionIndex = 0;
+    userAnswers = [];
+    score = 0;
+    loadQuiz();
+}
 
-    // Load questions from JSON
-    try {
-        const response = await fetch('mcqs.json');
-        const data = await response.json();
-
-        if (data[subject]) {
-            questions = data[subject];
-            userAnswers = new Array(questions.length).fill(null);
-            currentQuestionIndex = 0;
-
-            // Update total questions
-            const totalQuestionsEl = document.getElementById('totalQuestions');
-            if (totalQuestionsEl) {
-                totalQuestionsEl.textContent = questions.length;
-            }
-
-            displayQuestion();
-        } else {
-            alert('No questions available for this subject.');
+// Load Quiz on mcqs.html page
+if (window.location.pathname.includes('mcqs.html')) {
+    document.addEventListener('DOMContentLoaded', () => {
+        currentSubject = localStorage.getItem('selectedSubject');
+        if (!currentSubject) {
             window.location.href = 'index.html';
+            return;
         }
-    } catch (error) {
-        console.error('Error loading questions:', error);
-        alert('Error loading questions. Please try again.');
-        window.location.href = 'index.html';
-    }
-}
-
-// Format subject name
-function formatSubjectName(subject) {
-    const names = {
-        'english': 'English',
-        'islamiat': 'Islamiat',
-        'math': 'Mathematics',
-        'iq': 'IQ',
-        'computer': 'Computer',
-        'general': 'General Knowledge'
-    };
-    return names[subject] || subject;
-}
-
-// Display current question
-function displayQuestion() {
-    const question = questions[currentQuestionIndex];
-
-    // Update question text
-    const questionText = document.getElementById('questionText');
-    if (questionText) {
-        questionText.textContent = `Q${currentQuestionIndex + 1}. ${question.question}`;
-    }
-
-    // Update current question number
-    const currentQuestionEl = document.getElementById('currentQuestion');
-    if (currentQuestionEl) {
-        currentQuestionEl.textContent = currentQuestionIndex + 1;
-    }
-
-    // Update progress bar
-    const progressBar = document.getElementById('progressBar');
-    if (progressBar) {
-        const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
-        progressBar.style.width = progress + '%';
-    }
-
-    // Display options
-    const optionsList = document.getElementById('optionsList');
-    if (optionsList) {
-        optionsList.innerHTML = '';
-
-        question.options.forEach((option, index) => {
-            const optionDiv = document.createElement('div');
-            optionDiv.className = 'option';
-            if (userAnswers[currentQuestionIndex] === index) {
-                optionDiv.classList.add('selected');
-            }
-            optionDiv.innerHTML = `
-                <input type="radio" name="answer" id="option${index}" value="${index}" 
-                    ${userAnswers[currentQuestionIndex] === index ? 'checked' : ''}>
-                <label for="option${index}">${option}</label>
-            `;
-
-            optionDiv.addEventListener('click', function() {
-                selectOption(index);
-            });
-
-            optionsList.appendChild(optionDiv);
-        });
-    }
-
-    // Update navigation buttons
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-
-    if (prevBtn) {
-        prevBtn.disabled = currentQuestionIndex === 0;
-    }
-
-    if (nextBtn) {
-        if (currentQuestionIndex === questions.length - 1) {
-            nextBtn.textContent = 'Submit';
-            nextBtn.classList.add('btn-submit');
-        } else {
-            nextBtn.textContent = 'Next';
-            nextBtn.classList.remove('btn-submit');
-        }
-    }
-}
-
-// Select option
-function selectOption(optionIndex) {
-    userAnswers[currentQuestionIndex] = optionIndex;
-
-    // Update visual selection
-    const options = document.querySelectorAll('.option');
-    options.forEach((opt, idx) => {
-        if (idx === optionIndex) {
-            opt.classList.add('selected');
-            opt.querySelector('input').checked = true;
-        } else {
-            opt.classList.remove('selected');
-            opt.querySelector('input').checked = false;
-        }
+        loadQuestions();
     });
 }
 
-// Previous question
-function previousQuestion() {
-    if (currentQuestionIndex > 0) {
-        currentQuestionIndex--;
-        displayQuestion();
+// Load Questions from JSON file
+async function loadQuestions() {
+    try {
+        const response = await fetch('mcqs.json');
+        const data = await response.json();
+        
+        // Get questions for selected subject
+        questions = data[currentSubject] || [];
+        
+        if (questions.length === 0) {
+            document.getElementById('quizContent').innerHTML = `
+                <div style="text-align: center; padding: 60px 20px;">
+                    <i class="fas fa-exclamation-circle" style="font-size: 4rem; color: #ef4444; margin-bottom: 20px;"></i>
+                    <h3>No questions available for this subject</h3>
+                    <button onclick="goBack()" style="margin-top: 20px;" class="subject-btn">
+                        <i class="fas fa-arrow-left"></i> Go Back
+                    </button>
+                </div>
+            `;
+            return;
+        }
+        
+        loadQuiz();
+    } catch (error) {
+        console.error('Error loading questions:', error);
+        document.getElementById('quizContent').innerHTML = `
+            <div style="text-align: center; padding: 60px 20px;">
+                <i class="fas fa-exclamation-circle" style="font-size: 4rem; color: #ef4444; margin-bottom: 20px;"></i>
+                <h3>Error loading questions</h3>
+                <p>Please make sure mcqs.json file exists in the same directory.</p>
+                <button onclick="goBack()" style="margin-top: 20px;" class="subject-btn">
+                    <i class="fas fa-arrow-left"></i> Go Back
+                </button>
+            </div>
+        `;
     }
 }
 
-// Next question
+// Load Quiz Interface
+function loadQuiz() {
+    // Update subject name
+    const subjectNames = {
+        'english': 'English',
+        'islamiat': 'Islamiat',
+        'math': 'Mathematics',
+        'iq': 'IQ Test',
+        'computer': 'Computer',
+        'general_knowledge': 'General Knowledge'
+    };
+    
+    document.getElementById('quizSubject').textContent = subjectNames[currentSubject] || currentSubject;
+    document.getElementById('totalQuestions').textContent = questions.length;
+    
+    // Hide loading, show question box
+    document.getElementById('quizContent').style.display = 'none';
+    document.getElementById('questionBox').style.display = 'block';
+    document.getElementById('resultsBox').style.display = 'none';
+    
+    displayQuestion();
+}
+
+// Display Current Question
+function displayQuestion() {
+    const question = questions[currentQuestionIndex];
+    const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
+    
+    // Update progress
+    document.getElementById('progressBar').style.width = progress + '%';
+    document.getElementById('currentQuestion').textContent = currentQuestionIndex + 1;
+    
+    // Display question
+    document.getElementById('questionText').textContent = `${currentQuestionIndex + 1}. ${question.question}`;
+    
+    // Display options
+    const optionsContainer = document.getElementById('optionsContainer');
+    optionsContainer.innerHTML = '';
+    
+    question.options.forEach((option, index) => {
+        const button = document.createElement('button');
+        button.className = 'option-btn';
+        button.textContent = option;
+        button.onclick = () => selectOption(index);
+        optionsContainer.appendChild(button);
+    });
+}
+
+// Select Option
+function selectOption(selectedIndex) {
+    const buttons = document.querySelectorAll('.option-btn');
+    buttons.forEach((btn, index) => {
+        btn.classList.remove('selected');
+        if (index === selectedIndex) {
+            btn.classList.add('selected');
+        }
+    });
+    
+    userAnswers[currentQuestionIndex] = selectedIndex;
+}
+
+// Next Question
 function nextQuestion() {
-    if (currentQuestionIndex === questions.length - 1) {
-        submitTest();
-    } else {
-        currentQuestionIndex++;
+    // if (userAnswers[currentQuestionIndex] === undefined) {
+    //     alert('Please select an answer before proceeding.');
+    //     return;
+    // }
+    
+    currentQuestionIndex++;
+    
+    if (currentQuestionIndex < questions.length) {
         displayQuestion();
+    } else {
+        showResults();
     }
 }
 
-// Submit test
-function submitTest() {
+// Show Results
+function showResults() {
     // Calculate score
     score = 0;
     questions.forEach((question, index) => {
@@ -215,93 +199,101 @@ function submitTest() {
             score++;
         }
     });
-
-    // Hide MCQ container
-    const mcqContainer = document.getElementById('mcqContainer');
-    if (mcqContainer) {
-        mcqContainer.classList.add('hidden');
-    }
-
-    // Show result container
-    const resultContainer = document.getElementById('resultContainer');
-    if (resultContainer) {
-        resultContainer.classList.remove('hidden');
-        displayResults();
-    }
+    
+    const percentage = Math.round((score / questions.length) * 100);
+    const incorrectCount = questions.length - score;
+    
+    // Hide question box, show results
+    document.getElementById('questionBox').style.display = 'none';
+    document.getElementById('resultsBox').style.display = 'block';
+    
+    // Update score display
+    document.getElementById('scorePercentage').textContent = percentage + '%';
+    document.getElementById('scoreFraction').textContent = `${score}/${questions.length}`;
+    document.getElementById('correctCount').textContent = score;
+    document.getElementById('incorrectCount').textContent = incorrectCount;
+    
+    // Animate score circle
+    const circumference = 2 * Math.PI * 90;
+    const offset = circumference - (percentage / 100) * circumference;
+    document.getElementById('scoreCircle').style.strokeDashoffset = offset;
+    
+    // Display detailed results
+    displayDetailedResults();
 }
 
-// Display results
-function displayResults() {
-    const percentage = Math.round((score / questions.length) * 100);
-
-    // Update score display
-    document.getElementById('scorePercentage').textContent = percentage;
-    document.getElementById('correctCount').textContent = score;
-    document.getElementById('wrongCount').textContent = questions.length - score;
-    document.getElementById('totalCount').textContent = questions.length;
-
-    // Display detailed answers
-    const answersReview = document.getElementById('answersReview');
-    answersReview.innerHTML = '<h3>Review Your Answers</h3>';
-
+// Display Detailed Results with Explanations
+function displayDetailedResults() {
+    const container = document.getElementById('detailedResultsContainer');
+    container.innerHTML = '';
+    
     questions.forEach((question, index) => {
         const userAnswer = userAnswers[index];
         const isCorrect = userAnswer === question.correct;
-
-        const reviewItem = document.createElement('div');
-        reviewItem.className = `review-item ${isCorrect ? 'correct' : 'wrong'}`;
-
-        reviewItem.innerHTML = `
-            <div class="review-header">
-                <span class="review-number">Question ${index + 1}</span>
-                <span class="review-status">${isCorrect ? '✓ Correct' : '✗ Wrong'}</span>
+        
+        const resultItem = document.createElement('div');
+        resultItem.className = `result-item ${isCorrect ? 'correct' : 'incorrect'}`;
+        
+        resultItem.innerHTML = `
+            <div class="result-question">
+                ${index + 1}. ${question.question}
             </div>
-            <p class="review-question">${question.question}</p>
-            <div class="review-answers">
-                ${userAnswer !== null ? `
-                    <p><strong>Your answer:</strong> ${question.options[userAnswer]}</p>
-                ` : `
-                    <p><strong>Your answer:</strong> Not answered</p>
-                `}
-                ${!isCorrect ? `
-                    <p><strong>Correct answer:</strong> ${question.options[question.correct]}</p>
-                ` : ''}
+            <div class="result-answer">
+                <strong>Your answer:</strong> ${question.options[userAnswer] || 'Not answered'}
+                ${isCorrect ? '<i class="fas fa-check-circle" style="color: #10b981; margin-left: 8px;"></i>' : '<i class="fas fa-times-circle" style="color: #ef4444; margin-left: 8px;"></i>'}
             </div>
-            <div class="review-explanation">
-                <p><strong>Explanation:</strong> ${question.explanation}</p>
+            ${!isCorrect ? `
+                <div class="result-answer">
+                    <strong>Correct answer:</strong> ${question.options[question.correct]}
+                    <i class="fas fa-check-circle" style="color: #10b981; margin-left: 8px;"></i>
+                </div>
+            ` : ''}
+            <div class="result-explanation">
+                <strong>Explanation:</strong> ${question.explanation}
             </div>
         `;
-
-        answersReview.appendChild(reviewItem);
+        
+        container.appendChild(resultItem);
     });
 }
 
-// Restart test
-function restartTest() {
-    currentQuestionIndex = 0;
-    userAnswers = new Array(questions.length).fill(null);
-    score = 0;
+// Smooth Scroll for Anchor Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
 
-    // Hide result container
-    const resultContainer = document.getElementById('resultContainer');
-    if (resultContainer) {
-        resultContainer.classList.add('hidden');
-    }
+// Add animation on scroll
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+};
 
-    // Show MCQ container
-    const mcqContainer = document.getElementById('mcqContainer');
-    if (mcqContainer) {
-        mcqContainer.classList.remove('hidden');
-    }
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
 
-    displayQuestion();
-
-    // Scroll to top
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-// Go home
-function goHome() {
-    localStorage.removeItem('currentSubject');
-    window.location.href = 'index.html';
-}
+// Observe all animated elements
+document.addEventListener('DOMContentLoaded', () => {
+    const animatedElements = document.querySelectorAll('.feature-card, .subject-card');
+    animatedElements.forEach((el, index) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'all 0.6s ease-out';
+        el.style.transitionDelay = `${index * 0.1}s`;
+        observer.observe(el);
+    });
+});

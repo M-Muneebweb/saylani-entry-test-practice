@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 
 
     <title>Saylani Entry Test Practice</title>
@@ -23,7 +24,7 @@
     <meta property="og:title" content="Saylani Entry Test Practice">
     <meta property="og:description"
         content="Practice free MCQs for Saylani Entry Test with full review and subject-wise quiz.">
-    <meta property="og:url" content="https://m-muneebweb.github.io/Saylani-entry-test-practice/">
+    <meta property="og:url" content="https://saylani-entry-test-practice.vercel.app/">
     <meta property="og:type" content="website">
     <!-- Google tag (gtag.js) -->
     <!-- Google tag (gtag.js) -->
@@ -45,106 +46,196 @@
 <script>(function (s) { s.dataset.zone = '9928742', s.src = 'https://groleegni.net/vignette.min.js' })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
 
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
-        <div class="container nav-container">
-            <div class="logo">
-                <h1>Saylani Entry Test Practice</h1>
-            </div>
-            <div class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="about.html">About</a>
-                <a href="faqs.html">FAQs</a>
-                <a href="terms.html">Terms</a>
-                <a href="privacy.html">Privacy</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Saylani Entry Test</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-background"></div>
         <div class="container">
             <div class="hero-content">
-                <h2 class="animated-title">Master Your Entry Test</h2>
-                <p class="hero-subtitle">Practice MCQs across 6 subjects and boost your confidence</p>
-                <div class="hero-stats">
-                    <div class="stat-box">
-                        <h3>6</h3>
-                        <p>Subjects</p>
-                    </div>
-                    <div class="stat-box">
-                        <h3>899+</h3>
-                        <p>Questions</p>
-                    </div>
-                    <div class="stat-box">
-                        <h3>Free</h3>
-                        <p>Practice</p>
-                    </div>
-                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Saylani Entry Test</span>
+                    <span class="title-line">Practice Platform</span>
+                </h1>
+                <p class="hero-subtitle">Master your skills with comprehensive MCQ practice tests</p>
+                <a href="#subjects" class="cta-button">
+                    Start Practicing
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=600&fit=crop" alt="Student Learning">
             </div>
         </div>
     </section>
 
-    <section class="subjects">
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3>6 Subject Areas</h3>
+                <p>Comprehensive coverage of all test subjects</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Smart Practice</h3>
+                <p>Detailed explanations for every question</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Mobile Friendly</h3>
+                <p>Practice anywhere, anytime on any device</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Track Progress</h3>
+                <p>Monitor your performance and improvement</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section class="subjects" id="subjects">
         <div class="container">
             <h2 class="section-title">Choose Your Subject</h2>
+            <p class="section-subtitle">Select a subject to start practicing</p>
+
             <div class="subjects-grid">
                 <div class="subject-card" data-subject="english">
-                    <div class="icon">📚</div>
+                    <div class="subject-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
                     <h3>English</h3>
-                    <p>Grammar, vocabulary & comprehension</p>
-                    <button class="btn-start" onclick="startTest('english')">Start Test</button>
+                    <p>Grammar, vocabulary, and comprehension</p>
+                    <button class="subject-btn" onclick="startTest('english')">
+                        Start Test <i class="fas fa-play"></i>
+                    </button>
                 </div>
+
                 <div class="subject-card" data-subject="islamiat">
-                    <div class="icon">☪️</div>
+                    <div class="subject-icon">
+                        <i class="fas fa-mosque"></i>
+                    </div>
                     <h3>Islamiat</h3>
-                    <p>Islamic studies & knowledge</p>
-                    <button class="btn-start" onclick="startTest('islamiat')">Start Test</button>
+                    <p>Islamic studies and knowledge</p>
+                    <button class="subject-btn" onclick="startTest('islamiat')">
+                        Start Test <i class="fas fa-play"></i>
+                    </button>
                 </div>
+
                 <div class="subject-card" data-subject="math">
-                    <div class="icon">🔢</div>
+                    <div class="subject-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
                     <h3>Mathematics</h3>
-                    <p>Calculations & problem solving</p>
-                    <button class="btn-start" onclick="startTest('math')">Start Test</button>
+                    <p>Arithmetic, algebra, and problem-solving</p>
+                    <button class="subject-btn" onclick="startTest('math')">
+                        Start Test <i class="fas fa-play"></i>
+                    </button>
                 </div>
+
                 <div class="subject-card" data-subject="iq">
-                    <div class="icon">🧠</div>
-                    <h3>IQ</h3>
-                    <p>Logical reasoning & patterns</p>
-                    <button class="btn-start" onclick="startTest('iq')">Start Test</button>
+                    <div class="subject-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>IQ Test</h3>
+                    <p>Logical reasoning and analytical thinking</p>
+                    <button class="subject-btn" onclick="startTest('iq')">
+                        Start Test <i class="fas fa-play"></i>
+                    </button>
                 </div>
+
                 <div class="subject-card" data-subject="computer">
-                    <div class="icon">💻</div>
+                    <div class="subject-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
                     <h3>Computer</h3>
-                    <p>Basic computer knowledge</p>
-                    <button class="btn-start" onclick="startTest('computer')">Start Test</button>
+                    <p>Basic computer science and IT concepts</p>
+                    <button class="subject-btn" onclick="startTest('computer')">
+                        Start Test <i class="fas fa-play"></i>
+                    </button>
                 </div>
+
                 <div class="subject-card" data-subject="general_knowledge">
-                    <div class="icon">🌍</div>
+                    <div class="subject-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
                     <h3>General Knowledge</h3>
-                    <p>Current affairs & general info</p>
-                    <button class="btn-start" onclick="startTest('general_knowledge')">Start Test</button>
+                    <p>Current affairs and world knowledge</p>
+                    <button class="subject-btn" onclick="startTest('general_knowledge')">
+                        Start Test <i class="fas fa-play"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Saylani Entry Test Practice. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="about.html">About</a>
-                <a href="faqs.html">FAQs</a>
-                <a href="terms.html">Terms</a>
-                <a href="privacy.html">Privacy</a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Saylani</h4>
+                    <p>Empowering students to achieve excellence through quality education and practice.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> muneebrashidhome@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +92 31-332-583-30</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Saylani Mass IT Training. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
